@@ -1,0 +1,4 @@
+baseURL = 'https://qinhua99.github.io/'
+languageCode = 'en-us'
+title = "QingHua's Blog"
+theme = 'PaperMod'
