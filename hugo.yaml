@@ -1,0 +1,164 @@
+baseURL: 'https://qinhua99.github.io/'
+languageCode: en-us
+title: QingHua's Blog
+theme: PaperMod
+
+# 首页每页显示的文章数
+paginate: 10    
+# 是否启用内联短代码解析
+enableInlineShortcodes: true
+# 是否启用或禁用自动生成 robots.txt 文件
+enableRobotsTXT: true
+# 用于构建并生成包括草稿（drafts）在内的所有内容
+buildDrafts: false
+# 用于构建并生成未来（future）日期的内容
+buildFuture: false
+# 用于构建并生成过期（expired）的内容
+buildExpired: false
+# 启动emoji
+enableEmoji: true
+# 用于控制代码语法高亮所使用的 CSS 类
+pygmentsUseClasses: true
+
+minify:
+    # 对 XML 文件进行最小化处理
+    disableXML: true
+    # minifyOutput: true
+
+# 导航栏
+menu:
+  main:
+      - identifier: archive
+        name: 📰Post
+        url: /archives/
+        weight: 10
+      - identifier: categories
+        name: 📁Categories
+        url: /categories/
+        weight: 15
+      - identifier: tags
+        name: 📌Tags
+        url: /tags/
+        weight: 15
+      - identifier: about
+        name: 👨‍🚀
+        url: /about/
+        weight: 20
+      - identifier: search
+        name: 🔍
+        url: /search/
+        weight: 30
+
+# 代码高亮
+markup:
+    goldmark:
+        renderer:
+            unsafe: true # HUGO 默认转义 Markdown 文件中的 HTML 代码，如需开启的话
+    highlight:
+        # anchorLineNos: true
+        # 代码围栏功能
+        codeFences: true  
+        # 猜测语法
+        guessSyntax: true
+        # 行号
+        lineNos: false
+        # noClasses: false
+        # style: monokai
+        # 代码高亮样式
+        style: github
+
+params:
+  assets:
+    disableFingerprinting: true
+
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+# 搜索相关
+params:
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
+
+    assets:
+      # disableHLJS: true # to disable highlight.js
+      # disableFingerprinting: true
+      # favicon: "<link / abs url>"
+      # favicon16x16: "<link / abs url>"
+      # favicon32x32: "<link / abs url>"
+
+# 这个要在最后
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    description: "The  flow of ideas usually starts after you get started"
+    # author: Hua
+    # 设置默认主题颜色方案 auto system auto-dark auto-light dark light 
+    defaultTheme: auto
+    # 静止主题切换功能
+    # disableThemeToggle: true
+    # 是否显示分享按钮
+    ShowShareButtons: false
+    # 是否显示阅读时间
+    ShowReadingTime: true
+    # 禁用特殊的第一篇文章样式
+    # disableSpecial1stPost: true
+    # 是否显示完整的语言名称
+    displayFullLangName: true
+    # 是否显示文章导航链接
+    ShowPostNavLinks: true
+    # 是否显示面包屑导航 ，例如 “Home > Category > Subcategory > Page”
+    ShowBreadCrumbs: true
+    # 是否显示代码复制按钮
+    ShowCodeCopyButtons: true
+    # 是否在网站的特定区块（section）和分类（term）列表中显示 RSS 订阅按钮
+    ShowRssButtonInSectionTermList: false
+    # 是否显示文章的目录（Table of Contents，简称 TOC）
+    ShowToc: true
+    # 自动展开目录
+    TocOpen: true 
+    # comments: false
+    # images: ["papermod-cover.png"]
+    # 启动公式
+    enableInlineShortcodes : true
+    # 设置时区  
+    timezone: "Asia/Shanghai"
+    # 网站头像  还有问题---------------
+    assets:
+          favicon: "static/images/favicon.ico"
+          favicon16x16:  "static/images/favicon-16x16.png"
+          favicon32x32:  "static/images/favicon-32x32.png"
+          apple_touch_icon:  "static/images/apple-touch-icon.png"
+          # safari_pinned_tab:  "/safari-pinned-tab.svg"
+    # 日期格式
+    DateFormat: "2006-01-02"
+    # 文章字数统计 未显示 -------------
+    ShowWordCounts: true
+    # 显示修改时间
+    ShowLastMod: true
+
+    homeInfoParams:
+        Title: "👋 Welcome Stranger!"
+        Content: >
+
+            - 深自缄默，如云漂泊
+
+            - ***Deeply silent, Drifting like a cloud*** 
+
+            - ***"立于皓月之边,不弱星光之势"***
+
+    socialIcons:
+      - name: "Github"
+        url: "https://github.com/QinHua99"
+      - name: "email"
+        url: "https://ran_qinghua@163.com"
+      - name: "zhihu"
+        url: "https://www.zhihu.com/people/jiu-meng-zhu-96"
+
