@@ -7,8 +7,7 @@ ShowToc : true
 TocOpen : true
 categories :
 - Blog
-cover:
-    image: "posts/Hello_Blog/潜艇.png" #图片路径：posts/tech/文章1/picture.png
+
 
 ---
 summary : "立于好于"
