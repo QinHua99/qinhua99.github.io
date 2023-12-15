@@ -29,3 +29,5 @@ summary : "立于好于"
 ```
 
 `hugo -F --cleanDestinationDir`
+
+![test](Hello_Blog/潜艇.png)

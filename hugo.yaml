@@ -129,7 +129,7 @@ params:
     ShowWordCounts: true
     # 显示修改时间
     ShowLastMod: true
-    # 不蒜子统计
+    # 不蒜子统计 https://zhuanlan.zhihu.com/p/649952987
     busuanzi:
       enable: true
     # 左上角内容
