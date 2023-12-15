@@ -33,4 +33,6 @@ summary : "立于好于"
 
 `hugo -F --cleanDestinationDir`
 
-![test](Hello_Blog/潜艇.png)
+![](潜艇.png)
+
+![](https://cdn.jsdelivr.net/gh/qinhua99/picture@main/img/%E6%BD%9C%E8%89%87.png)

@@ -134,7 +134,7 @@ params:
       enable: true
     # 左上角内容
     label:
-      text: "QinHua"
+      text: "Home"
       icon: images/apple-touch-icon.png
       iconHeight: 35
 
