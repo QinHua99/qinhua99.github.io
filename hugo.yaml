@@ -67,9 +67,9 @@ markup:
         # 代码高亮样式
         style: github
 
-params:
-  assets:
-    disableFingerprinting: true
+# params:
+#   assets:
+#     disableFingerprinting: true
 
 
 outputs:
@@ -144,6 +144,10 @@ params:
     # 显示修改时间
     ShowLastMod: true
 
+    assets:
+      disableFingerprinting: true
+
+    # 主题配置
     homeInfoParams:
         Title: "👋 Welcome Stranger!"
         Content: >
