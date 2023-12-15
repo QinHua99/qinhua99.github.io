@@ -34,5 +34,6 @@ summary : "立于好于"
 
 ![](潜艇.png)
 ![](图8-a.png)
+![](./Hello_Blog/图8-a.png)
 
 ![](https://cdn.jsdelivr.net/gh/qinhua99/picture@main/img/%E6%BD%9C%E8%89%87.png)
