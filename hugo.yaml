@@ -37,7 +37,7 @@ menu:
         url: /categories/
         weight: 15
       - identifier: tags
-        name: 📌Tags
+        name: 🔖Tags
         url: /tags/
         weight: 15
       - identifier: about
@@ -77,23 +77,7 @@ outputs:
         - HTML
         - RSS
         - JSON # is necessary
-# 搜索相关
-params:
-    fuseOpts:
-        isCaseSensitive: false
-        shouldSort: true
-        location: 0
-        distance: 1000
-        threshold: 0.4
-        minMatchCharLength: 0
-        keys: ["title", "permalink", "summary", "content"]
 
-    assets:
-      # disableHLJS: true # to disable highlight.js
-      # disableFingerprinting: true
-      # favicon: "<link / abs url>"
-      # favicon16x16: "<link / abs url>"
-      # favicon32x32: "<link / abs url>"
 
 # 这个要在最后
 params:
@@ -132,20 +116,50 @@ params:
     timezone: "Asia/Shanghai"
     # 网站头像  还有问题---------------
     assets:
-          favicon: "static/images/favicon.ico"
-          favicon16x16:  "static/images/favicon-16x16.png"
-          favicon32x32:  "static/images/favicon-32x32.png"
-          apple_touch_icon:  "static/images/apple-touch-icon.png"
-          # safari_pinned_tab:  "/safari-pinned-tab.svg"
+      favicon: "images/favicon.ico"
+      favicon16x16:  "images/favicon-16x16.png"
+      favicon32x32:  "images/favicon-32x32.png"
+      apple_touch_icon:  "images/apple-touch-icon.png"
+      safari_pinned_tab:  "images/apple-touch-icon.png"
+      disableFingerprinting: true
+      
     # 日期格式
     DateFormat: "2006-01-02"
     # 文章字数统计 未显示 -------------
     ShowWordCounts: true
     # 显示修改时间
     ShowLastMod: true
+    # 不蒜子统计
+    busuanzi:
+      enable: true
+    # 左上角内容
+    label:
+      text: "QinHua"
+      icon: images/apple-touch-icon.png
+      iconHeight: 35
 
-    assets:
-      disableFingerprinting: true
+    # 设置封面图片的隐藏属性
+    cover:
+      # 这将在结构化数据中显示封面图片，但在其他地方隐藏它
+      hidden: true # hide everywhere but not in structured data
+      # 这将在列表页和首页上隐藏封面图片
+      hiddenInList: true # hide on list pages and home
+      # 这将在单独的页面上隐藏封面图片
+      hiddenInSingle: true # hide on single page
+    
+    # 搜索相关
+    fuseOpts:
+      isCaseSensitive: false
+      shouldSort: true
+      location: 0
+      distance: 1000
+      threshold: 0.4
+      minMatchCharLength: 0
+      keys: ["title", "permalink", "summary", "content"]
+    
+    StartYear: 2020 # 底部开始年份
+    # assets:
+    #   disableFingerprinting: true
 
     # 主题配置
     homeInfoParams:

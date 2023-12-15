@@ -1,6 +1,7 @@
 ---
 title : 'Hello_Blog'
 date : 2023-12-14T17:11:24+08:00
+lastmod : 2023-12-15T12:00:24+08:00
 draft : false
 ShowToc : true
 TocOpen : true
@@ -26,3 +27,5 @@ summary : "立于好于"
   <arg name="bridge_addr" default="172.22.49.214"/>
   <arg name="bridge_port" default="6002"/>
 ```
+
+`hugo -F --cleanDestinationDir`

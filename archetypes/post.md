@@ -2,7 +2,7 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 lastmod: {{ .Date }}
-author: ["田少晗"]
+author: ["ranqinghua"]
 
 categories:
 - category 1

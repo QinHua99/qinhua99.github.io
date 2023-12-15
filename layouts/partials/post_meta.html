@@ -21,3 +21,7 @@
 {{- with ($scratch.Get "meta") }}
 {{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
 {{- end -}}
+
+{{- if gt .Lastmod .Date -}}
+{{- $scratch.Add "meta" (slice (printf "<span title='%s'>(updated: %s)</span>" (.Lastmod) (.Lastmod | time.Format (default "January 2, 2006" .Site.Params.DateFormat)))) }}
+{{- end }}
