@@ -47,4 +47,4 @@ $$
     d & e & f \\
     g & h & i
    \end{matrix} \right|
- $$
+$$
