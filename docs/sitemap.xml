@@ -2,33 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://qinhua99.github.io/posts/</loc>
+    <loc>https://qinhuair.top/posts/</loc>
     <lastmod>2023-12-15T12:00:24+08:00</lastmod>
   </url><url>
-    <loc>https://qinhua99.github.io/</loc>
+    <loc>https://qinhuair.top/</loc>
     <lastmod>2023-12-15T12:00:24+08:00</lastmod>
   </url><url>
-    <loc>https://qinhua99.github.io/posts/test/</loc>
+    <loc>https://qinhuair.top/posts/test/</loc>
     <lastmod>2023-12-14T20:21:24+08:00</lastmod>
   </url><url>
-    <loc>https://qinhua99.github.io/categories/blog/</loc>
+    <loc>https://qinhuair.top/tags/abx/</loc>
     <lastmod>2023-12-15T12:00:24+08:00</lastmod>
   </url><url>
-    <loc>https://qinhua99.github.io/categories/</loc>
+    <loc>https://qinhuair.top/categories/blog/</loc>
     <lastmod>2023-12-15T12:00:24+08:00</lastmod>
   </url><url>
-    <loc>https://qinhua99.github.io/posts/hello/</loc>
+    <loc>https://qinhuair.top/categories/</loc>
+    <lastmod>2023-12-15T12:00:24+08:00</lastmod>
+  </url><url>
+    <loc>https://qinhuair.top/posts/hello/</loc>
     <lastmod>2023-12-14T17:11:24+08:00</lastmod>
   </url><url>
-    <loc>https://qinhua99.github.io/posts/hello_blog/</loc>
+    <loc>https://qinhuair.top/posts/hello_blog/</loc>
     <lastmod>2023-12-15T12:00:24+08:00</lastmod>
   </url><url>
-    <loc>https://qinhua99.github.io/archives/</loc>
+    <loc>https://qinhuair.top/tags/</loc>
+    <lastmod>2023-12-15T12:00:24+08:00</lastmod>
   </url><url>
-    <loc>https://qinhua99.github.io/about/</loc>
+    <loc>https://qinhuair.top/tags/test/</loc>
+    <lastmod>2023-12-15T12:00:24+08:00</lastmod>
   </url><url>
-    <loc>https://qinhua99.github.io/search/</loc>
+    <loc>https://qinhuair.top/about/</loc>
   </url><url>
-    <loc>https://qinhua99.github.io/tags/</loc>
+    <loc>https://qinhuair.top/archives/</loc>
+  </url><url>
+    <loc>https://qinhuair.top/search/</loc>
   </url>
 </urlset>
