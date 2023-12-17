@@ -1,5 +1,6 @@
 baseURL: 'https://qinghuair.top'
 languageCode: en-us
+# languageCode: zh-cn
 title: QingHua's Blog
 theme: PaperMod
 
@@ -29,16 +30,12 @@ minify:
 menu:
   main:
       - identifier: archive
-        name: 📰Post
+        name: 📰Posts
         url: /archives/
         weight: 10
       - identifier: categories
         name: 📁Categories
         url: /categories/
-        weight: 15
-      - identifier: tags
-        name: 🔖Tags
-        url: /tags/
         weight: 15
       - identifier: about
         name: 👨‍🚀
@@ -139,8 +136,8 @@ params:
 
     # 左上角内容
     label:
-      text: "Home"
-      icon: images/apple-touch-icon.png
+      text: "🌏"
+      # icon: images/apple-touch-icon.png
       iconHeight: 35
 
     # 设置封面图片的隐藏属性

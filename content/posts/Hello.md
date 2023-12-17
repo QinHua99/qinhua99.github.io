@@ -2,6 +2,8 @@
 title = 'hello'
 date = 2023-12-14T17:11:24+08:00
 draft = false
+ShowToc = true
+TocOpen = true
 +++
 summary : "立于好于"
 # 你好！
@@ -21,3 +23,7 @@ summary : "立于好于"
   <arg name="bridge_addr" default="172.22.49.214"/>
   <arg name="bridge_port" default="6002"/>
 ```
+
+<div style="text-align: center;">
+    <img src="图8-a.png" alt="test">
+</div>
