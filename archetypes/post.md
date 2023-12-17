@@ -22,6 +22,7 @@ weight: # 输入1可以顶置文章，用来给文章展示排序，不填就默
 slug: ""
 draft: false # 是否为草稿
 comments: true
+math: true #启动公式
 showToc: true # 显示目录
 TocOpen: true # 自动展开目录
 autonumbering: true # 目录自动编号

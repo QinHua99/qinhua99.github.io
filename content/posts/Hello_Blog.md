@@ -5,6 +5,7 @@ lastmod : 2023-12-15T12:00:24+08:00
 draft : false
 ShowToc : true
 TocOpen : true
+math : true 
 categories :
 - Blog
 tags:
@@ -38,3 +39,12 @@ summary : "立于好于"
 ![](Hello_Blog/图8-a.png)
 
 ![](https://cdn.jsdelivr.net/gh/qinhua99/picture@main/img/%E6%BD%9C%E8%89%87.png)
+
+# math
+$$
+ \left|\begin{matrix}
+    a & b & c \\
+    d & e & f \\
+    g & h & i
+   \end{matrix} \right|
+ $$
