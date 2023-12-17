@@ -1,5 +1,5 @@
 ---
-title: "QinHua"
+title: "👨‍🚀"
 layout: "about"
 url: "/about/"
 summary: about

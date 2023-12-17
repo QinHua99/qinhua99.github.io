@@ -1,4 +1,4 @@
-baseURL: 'https://qinhua99.github.io/'
+baseURL: 'https://qinhuair.top'
 languageCode: en-us
 title: QingHua's Blog
 theme: PaperMod
@@ -90,6 +90,7 @@ params:
     # disableThemeToggle: true
     # 是否显示分享按钮
     ShowShareButtons: false
+    ShareButtons: ["facebook", "telegram"] # To customize which share buttons to be enabled on page
     # 是否显示阅读时间
     ShowReadingTime: true
     # 禁用特殊的第一篇文章样式
@@ -131,7 +132,11 @@ params:
     ShowLastMod: true
     # 不蒜子统计 https://zhuanlan.zhihu.com/p/649952987
     busuanzi:
-      enable: true
+      enable: false
+
+    # ShowStatInSectionTermList: true
+    # ShowStatInArchive: true
+
     # 左上角内容
     label:
       text: "Home"

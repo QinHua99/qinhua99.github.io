@@ -21,6 +21,11 @@
     </a>
     {{- end }}
     {{- end }}
+    <!-- 字数统计-->
+    {{- if (.Param "ShowStatInSectionTermList" | default true) }}
+    <sup class="archive-count">&nbsp;&nbsp;{{- partial "stat.html" . }}</sup>
+    {{- end }}
+    <!-- 结束 -->
   </h1>
   {{- if .Description }}
   <div class="post-description">
