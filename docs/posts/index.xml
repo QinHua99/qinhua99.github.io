@@ -41,7 +41,7 @@ IMC是一种轻量级的，消息封装式的通信协议。 IMC定义了一系�
       <description>summary : &amp;ldquo;立于好于&amp;rdquo;
 你好！ &amp;ldquo;IMC(Inter-Module Communication)是Neptus系统中模块之间通信的一种协议或机制。&amp;rdquo;
 IMC是一种轻量级的，消息封装式的通信协议。 IMC定义了一系列的消息类型(Message)，每个消息都包含消息头和消息体。消息头包含源、目标、时间戳等元信息，消息体为实际的数据。 通过IMC，可以实现相互模块之间的收发。 二级标题 IMC支持点对点通信和发布-订阅两种模式。 IMC基于UDP通信，提供了比较高效和实时的消息传递。 Neptus系统中的控制器、控制面板、计划执行器等模块都通过IMC进行交互。新模块可以通过实现IMC来加入系统。 IMC为Neptus系统提供了一个可扩展和灵活的内部通信机制,大大减少了模块间的耦合,也方便新增模块。 哈哈哈 &amp;lt;!-- neptus地址 --&amp;gt; &amp;lt;arg name=&amp;#34;neptus_addr&amp;#34; default=&amp;#34;172.22.179.105&amp;#34;/&amp;gt; &amp;lt;!-- ros端地址 --&amp;gt; &amp;lt;arg name=&amp;#34;bridge_addr&amp;#34; default=&amp;#34;172.22.49.214&amp;#34;/&amp;gt; &amp;lt;arg name=&amp;#34;bridge_port&amp;#34; default=&amp;#34;6002&amp;#34;/&amp;gt; hugo -F --cleanDestinationDir
-math $$ \left|\begin{matrix} a &amp;amp; b &amp;amp; c \ d &amp;amp; e &amp;amp; f \ g &amp;amp; h &amp;amp; i \end{matrix} \right| $$</description>
+math $$ \def\arraystretch{1.5} \begin{array}{c:c:c} a &amp;amp; b &amp;amp; c \ \hline d &amp;amp; e &amp;amp; f \ \hdashline g &amp;amp; h &amp;amp; i \end{array} $$</description>
     </item>
     
   </channel>

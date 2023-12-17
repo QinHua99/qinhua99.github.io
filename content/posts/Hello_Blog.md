@@ -41,10 +41,12 @@ summary : "立于好于"
 ![](https://cdn.jsdelivr.net/gh/qinhua99/picture@main/img/%E6%BD%9C%E8%89%87.png)
 
 # math
-$$
- \left|\begin{matrix}
-    a & b & c \\
-    d & e & f \\
-    g & h & i
-   \end{matrix} \right|
+$$ 
+\def\arraystretch{1.5}
+   \begin{array}{c:c:c}
+   a & b & c \\ \hline
+   d & e & f \\
+   \hdashline
+   g & h & i
+\end{array} 
 $$
