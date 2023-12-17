@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on QingHua&#39;s Blog</title>
-    <link>https://qinhuair.top/categories/</link>
+    <link>https://qinghuair.top/categories/</link>
     <description>Recent content in Categories on QingHua&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Dec 2023 17:11:24 +0800</lastBuildDate><atom:link href="https://qinhuair.top/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Dec 2023 17:11:24 +0800</lastBuildDate><atom:link href="https://qinghuair.top/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog</title>
-      <link>https://qinhuair.top/categories/blog/</link>
+      <link>https://qinghuair.top/categories/blog/</link>
       <pubDate>Thu, 14 Dec 2023 17:11:24 +0800</pubDate>
       
-      <guid>https://qinhuair.top/categories/blog/</guid>
+      <guid>https://qinghuair.top/categories/blog/</guid>
       <description></description>
     </item>
     
