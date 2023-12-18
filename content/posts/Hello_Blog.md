@@ -72,9 +72,10 @@ public:
 
 ![](https://cdn.jsdelivr.net/gh/qinhua99/picture@main/img/%E6%BD%9C%E8%89%87.png)
 
-{{< fancybox_figure src="图8-a.png.png" caption="Caption #1" >}}
+{{< fancybox_figure align=center src="https://cdn.jsdelivr.net/gh/qinhua99/picture@main/img/%E6%BD%9C%E8%89%87.png" caption="Caption #1" >}}
+{{< fancybox_figure align=center src="图8-a.png" caption="Caption #1" >}}
 
-{{< figure align=center src="euler-lauv.png" >}}
+{{< figure align=center src="https://cdn.jsdelivr.net/gh/qinhua99/picture@main/img/%E6%BD%9C%E8%89%87.png" caption="test">}}
 # math
 math公式$\tilde{a}$    
 
