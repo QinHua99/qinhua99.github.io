@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://qinghuair.top/categories/</loc>
+    <lastmod>2023-12-15T12:00:24+08:00</lastmod>
+  </url><url>
+    <loc>https://qinghuair.top/categories/hugo/</loc>
+    <lastmod>2023-12-15T12:00:24+08:00</lastmod>
+  </url><url>
+    <loc>https://qinghuair.top/posts/hugo-papermod%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2023-12-15T12:00:24+08:00</lastmod>
+  </url><url>
     <loc>https://qinghuair.top/posts/</loc>
     <lastmod>2023-12-15T12:00:24+08:00</lastmod>
   </url><url>
@@ -15,9 +24,6 @@
     <lastmod>2023-12-15T12:00:24+08:00</lastmod>
   </url><url>
     <loc>https://qinghuair.top/categories/blog/</loc>
-    <lastmod>2023-12-15T12:00:24+08:00</lastmod>
-  </url><url>
-    <loc>https://qinghuair.top/categories/</loc>
     <lastmod>2023-12-15T12:00:24+08:00</lastmod>
   </url><url>
     <loc>https://qinghuair.top/posts/hello/</loc>
