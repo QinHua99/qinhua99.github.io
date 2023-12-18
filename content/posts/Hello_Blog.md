@@ -6,13 +6,15 @@ draft : false
 ShowToc : true
 TocOpen : true
 math : true 
+ShowWordCounts : true
 categories :
 - Blog
 tags:
 - abx
 - test
----
 summary : "立于好于"
+---
+
 # 你好！
 > "IMC(Inter-Module Communication)是Neptus系统中模块之间通信的一种协议或机制。"
 - IMC是一种轻量级的，消息封装式的通信协议。
@@ -40,6 +42,7 @@ summary : "立于好于"
 
 ![](https://cdn.jsdelivr.net/gh/qinhua99/picture@main/img/%E6%BD%9C%E8%89%87.png)
 
+{{< figure align=center src="euler-lauv.png" >}}
 # math
 $$ 
 \def\arraystretch{1.5}

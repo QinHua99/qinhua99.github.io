@@ -23,6 +23,7 @@ slug: ""
 draft: false # 是否为草稿
 comments: true
 math: true #启动公式
+ShowWordCounts : true #统计字数
 showToc: true # 显示目录
 TocOpen: true # 自动展开目录
 autonumbering: true # 目录自动编号

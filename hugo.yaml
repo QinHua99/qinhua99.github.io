@@ -20,6 +20,9 @@ buildExpired: false
 enableEmoji: true
 # 用于控制代码语法高亮所使用的 CSS 类
 pygmentsUseClasses: true
+# 生产目录名
+publishDir: docs
+
 
 minify:
     # 对 XML 文件进行最小化处理
@@ -102,6 +105,8 @@ params:
     ShowCodeCopyButtons: true
     # 是否在网站的特定区块（section）和分类（term）列表中显示 RSS 订阅按钮
     ShowRssButtonInSectionTermList: false
+    # 文章字数统计 未显示 -------------
+    ShowWordCounts: true
     # 是否显示文章的目录（Table of Contents，简称 TOC）
     ShowToc: true
     # 自动展开目录
@@ -123,8 +128,7 @@ params:
       
     # 日期格式
     DateFormat: "2006-01-02"
-    # 文章字数统计 未显示 -------------
-    ShowWordCounts: true
+
     # 显示修改时间
     ShowLastMod: true
     # 不蒜子统计 https://zhuanlan.zhihu.com/p/649952987
