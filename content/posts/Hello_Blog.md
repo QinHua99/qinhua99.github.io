@@ -72,6 +72,8 @@ public:
 
 ![](https://cdn.jsdelivr.net/gh/qinhua99/picture@main/img/%E6%BD%9C%E8%89%87.png)
 
+{{< fancybox_figure src="Hugo-2.png.png" caption="Caption #1" >}}
+
 {{< figure align=center src="euler-lauv.png" >}}
 # math
 math公式$\tilde{a}$    
