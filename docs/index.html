@@ -58,7 +58,35 @@
 
     </style>
 </noscript>
-<meta property="og:title" content="QingHua&#39;s Blog" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/style.css" /><meta property="og:title" content="QingHua&#39;s Blog" />
 <meta property="og:description" content="The  flow of ideas usually starts after you get started" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://qinghuair.top/" />
@@ -79,7 +107,9 @@
       "https://github.com/QinHua99", "https://ran_qinghua@163.com", "https://www.zhihu.com/people/jiu-meng-zhu-96"
   ]
 }
-</script>
+</script><link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/style.css" />
+
+
 </head>
 
 <body class="list" id="top">
@@ -214,7 +244,7 @@ git clone https://github.com/apvarun/blist-hugo-theme.git themes/blist ##获得�
   <div class="entry-content">
     <p>summary : “立于好于”
 你好！ “IMC(Inter-Module Communication)是Neptus系统中模块之间通信的一种协议或机制。”
-IMC是一种轻量级的，消息封装式的通信协议。 IMC定义了一系列的消息类型(Message)，每个消息都包含消息头和消息体。消息头包含源、目标、时间戳等元信息，消息体为实际的数据。 通过IMC，可以实现相互模块之间的收发。 &lt; !—more —&gt; IMC支持点对点通信和发布-订阅两种模式。 IMC基于UDP通信，提供了比较高效和实时的消息传递。 Neptus系统中的控制器、控制面板、计划执行器等模块都通过IMC进行交互。新模块可以通过实现IMC来加入系统。 IMC为Neptus系统提供了一个可扩展和灵活的内部通信机制,大大减少了模块间的耦合,也方便新增模块。 &lt;!-- neptus地址 --&gt; &lt;arg name=&#34;neptus_addr&#34; default=&#34;172.22.179.105&#34;/&gt; &lt;!-- ros端地址 --&gt; &lt;arg name=&#34;bridge_addr&#34; default=&#34;172.22.49.214&#34;/&gt; &lt;arg name=&#34;bridge_port&#34; default=&#34;6002&#34;/&gt; </p>
+IMC是一种轻量级的，消息封装式的通信协议。 IMC定义了一系列的消息类型(Message)，每个消息都包含消息头和消息体。消息头包含源、目标、时间戳等元信息，消息体为实际的数据。 通过IMC，可以实现相互模块之间的收发。 &lt; !—more —&gt; IMC支持点对点通信和发布-订阅两种模式。 IMC基于UDP通信，提供了比较高效和实时的消息传递。 Neptus系统中的控制器、控制面板、计划执行器等模块都通过IMC进行交互。新模块可以通过实现IMC来加入系统。 IMC为Neptus系统提供了一个可扩展和灵活的内部通信机制,大大减少了模块间的耦合,也方便新增模块。 1 2 3 4 5 &lt;!-- neptus地址 --&gt; &lt;arg name=&#34;neptus_addr&#34; default=&#34;172.22.179.105&#34;/&gt; &lt;!-- ros端地址 --&gt; &lt;arg name=&#34;bridge_addr&#34; default=&#34;172.22.49.214&#34;/&gt; &lt;arg name=&#34;bridge_port&#34; default=&#34;6002&#34;/&gt; </p>
   </div>
   <footer class="entry-footer"><span title='2023-12-14 17:11:24 +0800 CST'>2023-12-14</span>&nbsp;·&nbsp;1 min
 

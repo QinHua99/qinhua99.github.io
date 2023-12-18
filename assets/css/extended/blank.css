@@ -90,3 +90,16 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 .toc li a:hover {
     color: var(--secondary);
 }
+
+
+body {
+    font-family: "LXGW WenKai Screen", sans-serif !important;
+}
+​
+code {
+    font-family: "LXGW WenKai Screen", sans-serif;
+}
+.post-content pre, code {
+    font-family: 'Consolas', sans-serif;
+    max-height: 40rem;
+}

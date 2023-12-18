@@ -6,6 +6,7 @@ theme: PaperMod
 
 # 首页每页显示的文章数
 paginate: 10    
+
 # 是否启用内联短代码解析
 enableInlineShortcodes: true
 # 是否启用或禁用自动生成 robots.txt 文件
@@ -61,11 +62,12 @@ markup:
         # 猜测语法
         guessSyntax: true
         # 行号
-        lineNos: false
+        lineNos: true
         # noClasses: false
         # style: monokai
         # 代码高亮样式
-        style: github
+        # style: monokai
+        style: fruity
 
 # params:
 #   assets:
@@ -93,6 +95,8 @@ params:
     ShareButtons: ["facebook", "telegram"] # To customize which share buttons to be enabled on page
     # 是否显示阅读时间
     ShowReadingTime: true
+    # 数学公式
+    math: true  
     # 禁用特殊的第一篇文章样式
     # disableSpecial1stPost: true
     # 是否显示完整的语言名称
