@@ -74,7 +74,7 @@ public:
 
 {{< fancybox_figure align=center src="https://cdn.jsdelivr.net/gh/qinhua99/picture@main/img/%E6%BD%9C%E8%89%87.png" caption="Caption #1" >}}
 {{< fancybox_figure align=center src="图8-a.png" caption="Caption #1" >}}
-{{< fancybox_figure align=center src="9.19 20.24 瑞士森林.png" caption="bizhi-test" >}}
+<!-- {{< fancybox_figure align=center src="9.19 20.24 瑞士森林.png" caption="bizhi-test" >}} -->
 
 {{< figure align=center src="https://cdn.jsdelivr.net/gh/qinhua99/picture@main/img/%E6%BD%9C%E8%89%87.png" caption="test">}}
 # math
