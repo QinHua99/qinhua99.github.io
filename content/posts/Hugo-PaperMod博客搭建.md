@@ -1,14 +1,13 @@
 ---
-title : 'Hugo-PaperMod博客搭建'
+title : 'Hugo-PaperMod'
 date : 2023-12-17T17:11:24+08:00
-
 draft : false
 ShowToc : true
 TocOpen : true
 categories :
 - Hugo
+
 ---
-# Hugo-PaperMod博客搭建
 # Hugo下载与安装
 - 到[Github](https://github.com/gohugoio/hugo/releases/tag/v0.121.1)下载[Hugo](https://gohugo.io/getting-started/quick-start/)的二进制文件，解压到合适位置。
   {{< fancybox_figure align=center src="Hugo-1.png.png" >}}   
@@ -20,7 +19,7 @@ categories :
 **注**：下载安装的方法并不唯一，比如通过包管理器（如 Homebrew 或 Chocolatey）安装的 Hugo也是可以的   
 # 创建GitHub-Blog仓库   
  
-***
+
 
 
 # 文章书写
