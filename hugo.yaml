@@ -101,6 +101,8 @@ params:
     # disableSpecial1stPost: true
     # 是否显示完整的语言名称
     displayFullLangName: true
+    # 放大图片
+    fancybox : true
     # 是否显示文章导航链接
     ShowPostNavLinks: true
     # 是否显示面包屑导航 ，例如 “Home > Category > Subcategory > Page”
