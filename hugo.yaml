@@ -1,4 +1,5 @@
-baseURL: 'https://qinghuair.top'
+# baseURL: 'https://qinghuair.top'
+baseURL: 'https://qinhua99.github.io'
 languageCode: en-us
 # languageCode: zh-cn
 title: QingHua's Blog
