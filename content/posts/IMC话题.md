@@ -1,10 +1,11 @@
-+++
-title = '话题'
-date = 2023-12-14T17:11:24+08:00
-draft = false
-ShowToc = true
-TocOpen = true
-+++
+---
+title : 'IMC话题'
+date : 2023-12-14T17:11:24+08:00
+lastmod : 2023-12-19T10:00:24+08:00
+draft : false
+ShowToc : true
+TocOpen : true
+---
 summary : "立于好于"
 # 你好！
 > "IMC(Inter-Module Communication)是Neptus系统中模块之间通信的一种协议或机制。"
