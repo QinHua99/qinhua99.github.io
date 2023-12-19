@@ -1,13 +1,13 @@
 ---
-title : 'Hugo-Papermod博客搭建'
-date : 2023-12-18T22:52:20+08:00
+title : 'Hugo-Papermod建站'
+date : 2023-12-19T09:52:20+08:00
 draft : false
-categories:
-- Hugo
 math: true #启动公式
 ShowWordCounts : true #统计字数
 showToc: true # 显示目录
 TocOpen: true # 自动展开目录
+categories:
+- Hugo
 ---
 {{< fancybox_figure align=center src="Hugo-3.png.png" >}}  
 # 自定义字体和代码   

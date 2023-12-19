@@ -6,24 +6,24 @@
     <description>Recent content in Posts on QingHua&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Dec 2023 22:52:20 +0800</lastBuildDate><atom:link href="https://qinhua99.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Dec 2023 09:52:20 +0800</lastBuildDate><atom:link href="https://qinhua99.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugo-Papermod</title>
-      <link>https://qinhua99.github.io/posts/hugo-papermod/</link>
-      <pubDate>Mon, 18 Dec 2023 22:52:20 +0800</pubDate>
+      <title>Hugo-Papermod建站</title>
+      <link>https://qinhua99.github.io/posts/hugo-papermod%E5%BB%BA%E7%AB%99/</link>
+      <pubDate>Tue, 19 Dec 2023 09:52:20 +0800</pubDate>
       
-      <guid>https://qinhua99.github.io/posts/hugo-papermod/</guid>
+      <guid>https://qinhua99.github.io/posts/hugo-papermod%E5%BB%BA%E7%AB%99/</guid>
       <description>自定义字体和代码 字体选择的是LXGW WenKai/霞鹜文楷，参考其网页嵌入实现1,2，在layouts/partials/extend_head.html中插入HTML代码
 1 &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/style.css&amp;#34; /&amp;gt; 在assets/css/extended/blank.css中插入CCS即可，Consolas是本博客采用的字体
 1 2 3 4 5 6 7 8 9 10 11 12 13 /*字体*/ body { font-family: &amp;#34;LXGW WenKai Screen&amp;#34;, sans-serif !important; } code { font-family: &amp;#34;LXGW WenKai Screen&amp;#34;, sans-serif; } /*code*/ .post-content pre, code { font-family: &amp;#39;Consolas&amp;#39;, sans-serif; max-height: 40rem; } </description>
     </item>
     
     <item>
-      <title>Hugo-Papermod博客搭建</title>
-      <link>https://qinhua99.github.io/posts/hugo-papermod%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
+      <title>Hugo-Papermod</title>
+      <link>https://qinhua99.github.io/posts/hugo-papermod/</link>
       <pubDate>Mon, 18 Dec 2023 22:52:20 +0800</pubDate>
       
-      <guid>https://qinhua99.github.io/posts/hugo-papermod%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
+      <guid>https://qinhua99.github.io/posts/hugo-papermod/</guid>
       <description>自定义字体和代码 字体选择的是LXGW WenKai/霞鹜文楷，参考其网页嵌入实现1,2，在layouts/partials/extend_head.html中插入HTML代码
 1 &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/style.css&amp;#34; /&amp;gt; 在assets/css/extended/blank.css中插入CCS即可，Consolas是本博客采用的字体
 1 2 3 4 5 6 7 8 9 10 11 12 13 /*字体*/ body { font-family: &amp;#34;LXGW WenKai Screen&amp;#34;, sans-serif !important; } code { font-family: &amp;#34;LXGW WenKai Screen&amp;#34;, sans-serif; } /*code*/ .post-content pre, code { font-family: &amp;#39;Consolas&amp;#39;, sans-serif; max-height: 40rem; } </description>
