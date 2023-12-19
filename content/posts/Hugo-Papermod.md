@@ -1,5 +1,5 @@
 ---
-title : 'Hugo-Papermod博客搭建'
+title : 'Hugo-Papermod'
 date : 2023-12-18T22:52:20+08:00
 draft : false
 categories:
