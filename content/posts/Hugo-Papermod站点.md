@@ -9,7 +9,12 @@ ShowWordCounts : true #统计字数
 showToc: true # 显示目录
 TocOpen: true # 自动展开目录
 ---
-{{< fancybox_figure align=center src="Hugo-1.png.png" >}}  
+1    
+{{< fancybox_figure align=center src="Hugo-1.png" >}}     
+2    
+{{< figure align=center src="Hugo-1.png" caption="test">}}     
+3   
+![aaa](Hugo-1.png)    
 # 自定义字体和代码   
   字体选择的是[LXGW WenKai/霞鹜文楷](https://github.com/lxgw/LxgwWenKai)，参考其[网页嵌入](https://github.com/lxgw/LxgwWenKai/issues/24)实现<sup>1,2</sup>，在`layouts/partials/extend_head.html`中插入HTML代码
   ```html
