@@ -11,12 +11,12 @@ TocOpen: true # 自动展开目录
 ---
 # Hugo下载与安装
 - 到[Github](https://github.com/gohugoio/hugo/releases/tag/v0.121.1)下载[Hugo](https://gohugo.io/getting-started/quick-start/)的二进制文件，解压到合适位置。
-  {{< fancybox_figure align=center src="Hugo-1.png" >}}   
+  {{< fancybox_figure align=center src="Hugo-1.png" >}}
 - 在电脑中添加**环境变量**。“环境变量”-“Path”-"编辑环境变量"-“新建”-“D:\Application\hugo”，确定即可
-  {{< fancybox_figure align=center src="Hugo-2.png" >}}   
-  {{< fancybox_figure align=center src="Hugo-3.png" >}}   
+  {{< fancybox_figure align=center src="Hugo-2.png" >}}
+  {{< fancybox_figure align=center src="Hugo-3.png" >}}
 - 验证其是否安装成功，在终端中输入`hugo serson`，出现版本号即可
-  {{< fancybox_figure align=center src="Hugo-4.png" >}}   
+  {{< fancybox_figure align=center src="Hugo-4.png" >}}
 **注**：下载安装的方法并不唯一，比如通过包管理器（如 Homebrew 或 Chocolatey）安装的 Hugo也是可以的   
 # 创建GitHub-Blog仓库
 在[Github](https://github.com/)创建新的仓库，**仓库名称为用户名.github.io**，也可添加`README file`，创建后可克隆到本地。
@@ -51,7 +51,7 @@ TocOpen: true # 自动展开目录
   ```shell
   hugo new posts/Hello_world.md
   ```
-  {{< fancybox_figure align=center src="Hugo-posts.png" >}}  
+  {{< fancybox_figure align=center src="Hugo-posts.png" >}}
   使用markdown语法进行编辑即可，对于文章也可以在posts目录下直接创建或复制已写好的文章
 # 主题配置
 
