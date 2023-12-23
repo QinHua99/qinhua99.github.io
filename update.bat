@@ -1,5 +1,9 @@
 @echo off
 
+REM 设置环境变量
+set https_proxy=http://127.0.0.1:7890
+set http_proxy=http://127.0.0.1:7890
+
 REM 运行 Hugo
 hugo -F --cleanDestinationDir
 
