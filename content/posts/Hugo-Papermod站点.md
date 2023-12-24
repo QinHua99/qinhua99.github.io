@@ -183,7 +183,19 @@ params:
 ```
 ## 公式问题<sup>[9](#rf9)</sup> 
 按照[PaperMod官方](https://adityatelange.github.io/hugo-PaperMod/posts/math-typesetting/)的配置后，当插入公式存在无法显示，主要由于换行。   
-**解决**：对于换行的`\\`要使用`\\\`来替代即可 
+**解决**：对于换行的`\\`要使用`\\\`来替代即可。   
+```latex
+x = \begin{cases}
+   a &\text{if } b \\\
+   c &\text{if } d
+\end{cases}
+``` 
+$$
+x = \begin{cases}
+   a &\text{if } b \\
+   c &\text{if } d
+\end{cases}
+$$
 ## 目录放在侧面<sup>[2](#rf2)</sup>   
   对`layouts/partials/toc.html`文件代码替换如如下代码
   ```html
@@ -432,7 +444,8 @@ params:
   }
   ```
 ## 自定义字体和代码<sup>[3](#rf3),[7](#rf7),[8](#rf8)</sup>   
-  字体选择的是[LXGW WenKai/霞鹜文楷](https://github.com/lxgw/LxgwWenKai)，参考其[网页嵌入](https://github.com/lxgw/LxgwWenKai/issues/24)实现<sup>1,2</sup>，在`layouts/partials/extend_head.html`中插入HTML代码
+  字体选择的是[LXGW WenKai/霞鹜文楷](https://github.com/lxgw/LxgwWenKai)，参考其[网页嵌入](https://github.com/lxgw/LxgwWenKai/issues/24)实现。   
+  在`layouts/partials/extend_head.html`中插入HTML代码
   ```html
   <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/style.css" />
   ```
