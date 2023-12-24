@@ -180,6 +180,9 @@ params:
       - name: "zhihu"
         url: "https://www.zhihu.com/people/jiu-meng-zhu-96"
 ```
+## 公式问题<sup>[9](#rf9)</sup> 
+按照[PaperMod官方](https://adityatelange.github.io/hugo-PaperMod/posts/math-typesetting/)的配置后，当插入公式存在无法显示，主要由于换行。   
+**解决：**对于换行的`\\`要使用`\\\`来替代即可 
 ## 目录放在侧面<sup>[2](#rf2)</sup>   
   对`layouts/partials/toc.html`文件代码替换如如下代码
   ```html
@@ -427,7 +430,7 @@ params:
       color: var(--secondary);
   }
   ```
-## 自定义字体和代码<sup>[3](#rf3),[6](#rf6),[7](#rf7)</sup>   
+## 自定义字体和代码<sup>[3](#rf3),[7](#rf7),[8](#rf8)</sup>   
   字体选择的是[LXGW WenKai/霞鹜文楷](https://github.com/lxgw/LxgwWenKai)，参考其[网页嵌入](https://github.com/lxgw/LxgwWenKai/issues/24)实现<sup>1,2</sup>，在`layouts/partials/extend_head.html`中插入HTML代码
   ```html
   <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/style.css" />
@@ -449,7 +452,7 @@ params:
     }
   ```
 ## Fancybox 实现图片灯箱/放大功能  
-  根据[官方](https://fancyapps.com/fancybox/getting-started/)的教程和结合大佬<sup>[7](#r7)</sup>的描述得出，在`layouts/partials/footer.html`中加入如下代码   
+  根据[官方](https://fancyapps.com/fancybox/getting-started/)的教程和结合大佬<sup>[8](#r8)</sup>的描述得出，在`layouts/partials/footer.html`中加入如下代码   
   ```html
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 
@@ -501,10 +504,12 @@ git push origin main
 最后在Github对应仓库下，点击`Settings`-`Pages`配置即可，本站生产的在`/docs`下，关于网站生产内容也可以单独开分支上传，方式很多
 {{< fancybox_figure align=center src="hugo-github.png" caption="Github-Pages" >}}  
 # Reference 
-<a id="rf1">[1. 零成本搭建个人博客：hugo安装](https://zhuanlan.zhihu.com/p/440175312)</a>
-<a id="rf2">[2. [置顶] hugo博客搭建 | PaperMod主题 | Sulv's Blog](https://www.sulvblog.cn/posts/blog/build_hugo/)</a>
-<a id="rf3">[3. Hugo + PaperMod搭建技术博客 | Kyrie](https://kyxie.github.io/zh/blog/tech/papermod/#%e5%ae%89%e8%a3%85%e8%bf%87%e7%a8%8b)</a>
-<a id="rf4">[4. PaperMod主题配置|🚀 田少晗的个人博客](https://www.shaohanyun.top/posts/env/blog_build2/#:~:text=PaperMod%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%201%20Hugo%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84%20%E6%88%91%E4%BB%AC%E5%85%88%E6%9D%A5%E4%BA%86%E8%A7%A3%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8B%E5%90%84%E4%B8%AA%E6%96%87%E4%BB%B6%E5%A4%B9%E7%9A%84%E4%BD%9C%E7%94%A8%EF%BC%8C%E5%8F%AF%E4%BB%A5%E5%8F%82%E8%80%83%20%E5%AE%98%E6%96%B9%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84%E8%AF%B4%E6%98%8E%20%3A%20...%202,...%208%20%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86%20%E6%88%91%E4%BB%AC%E5%86%99%E4%BD%9C%E7%9A%84%E5%86%85%E5%AE%B9%E9%83%BD%E6%98%AF%E6%94%BE%E5%9C%A8%20content%20%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%9A%84%EF%BC%8C%E5%9B%A0%E6%AD%A4%E6%9C%89%E5%BF%85%E8%A6%81%E5%AF%B9%E5%85%B6%E5%86%85%E5%AE%B9%E6%9C%89%E4%B8%80%E4%B8%AA%E5%9F%BA%E6%9C%AC%E4%BA%86%E8%A7%A3%20...%20%E6%9B%B4%E5%A4%9A%E9%A1%B9%E7%9B%AE)</a>
-<a id="rf5">[5. Hello Hugo | 仙羡小站](https://www.liyangjie.cn/posts/hobby/hello-hugo/)</a>
-<a id="rf6">[6. Hugo使用自定义字体-晓寒轻](https://zhuanlan.zhihu.com/p/627444050)</a>
-<a id="rf7">[7. Hugo 博客自定义优化ANY_ME | ANY_ME](https://shishuochen.gitee.io/2020/uffick8u1/)</a>
+<a id="rf1">[1. 零成本搭建个人博客：hugo安装](https://zhuanlan.zhihu.com/p/440175312)</a>   
+<a id="rf2">[2. [置顶] hugo博客搭建 | PaperMod主题 | Sulv's Blog](https://www.sulvblog.cn/posts/blog/build_hugo/)</a>   
+<a id="rf3">[3. Hugo + PaperMod搭建技术博客 | Kyrie](https://kyxie.github.io/zh/blog/tech/papermod/#%e5%ae%89%e8%a3%85%e8%bf%87%e7%a8%8b)</a>   
+<a id="rf4">[4. PaperMod主题配置|🚀 田少晗的个人博客](https://www.shaohanyun.top/posts/env/blog_build2/#:~:text=PaperMod%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%201%20Hugo%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84%20%E6%88%91%E4%BB%AC%E5%85%88%E6%9D%A5%E4%BA%86%E8%A7%A3%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8B%E5%90%84%E4%B8%AA%E6%96%87%E4%BB%B6%E5%A4%B9%E7%9A%84%E4%BD%9C%E7%94%A8%EF%BC%8C%E5%8F%AF%E4%BB%A5%E5%8F%82%E8%80%83%20%E5%AE%98%E6%96%B9%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84%E8%AF%B4%E6%98%8E%20%3A%20...%202,...%208%20%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86%20%E6%88%91%E4%BB%AC%E5%86%99%E4%BD%9C%E7%9A%84%E5%86%85%E5%AE%B9%E9%83%BD%E6%98%AF%E6%94%BE%E5%9C%A8%20content%20%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%9A%84%EF%BC%8C%E5%9B%A0%E6%AD%A4%E6%9C%89%E5%BF%85%E8%A6%81%E5%AF%B9%E5%85%B6%E5%86%85%E5%AE%B9%E6%9C%89%E4%B8%80%E4%B8%AA%E5%9F%BA%E6%9C%AC%E4%BA%86%E8%A7%A3%20...%20%E6%9B%B4%E5%A4%9A%E9%A1%B9%E7%9B%AE)</a>   
+<a id="rf5">[5. Hello Hugo | 仙羡小站](https://www.liyangjie.cn/posts/hobby/hello-hugo/)</a>   
+<a id="rf6">[6. 折腾 Hugo & PaperMod 主题 | Dvel's Blog](https://dvel.me/posts/hugo-papermod-config/)</a>   
+<a id="rf7">[7. Hugo使用自定义字体-晓寒轻](https://zhuanlan.zhihu.com/p/627444050)</a>   
+<a id="rf8">[8. Hugo 博客自定义优化ANY_ME | ANY_ME](https://shishuochen.gitee.io/2020/uffick8u1/)</a>   
+<a id="rf9">[9. 在Hugo PaperMod主题中加入数学支持的最简方式](https://blog.csdn.net/WongSSH/article/details/126962069)</a>   
