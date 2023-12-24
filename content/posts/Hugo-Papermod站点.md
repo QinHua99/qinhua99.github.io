@@ -449,7 +449,7 @@ params:
     }
   ```
 - Fancybox 实现图片灯箱/放大功能  
-  根据[官方](https://fancyapps.com/fancybox/getting-started/)的教程和结合大佬<sup>[1],[2],#r3</sup>的描述得出，在`layouts/partials/footer.html`中加入如下代码   
+  根据[官方](https://fancyapps.com/fancybox/getting-started/)的教程和结合大佬<sup>[1],[2],3#r3</sup>的描述得出，在`layouts/partials/footer.html`中加入如下代码   
   ```html
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 
