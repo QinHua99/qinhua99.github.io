@@ -223,7 +223,7 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>Hugo下载与安装 到Github下载Hugo的二进制文件，解压到合适位置。 在电脑中添加环境变量。“环境变量”-“Path”-“编辑环境变量”-“新建”-“D:\Application\hugo”，确定即可 验证其是否安装成功，在终端中输入hugo serson，出现版本号即可 注：下载安装的方法并不唯一，比如通过包管理器（如 Homebrew 或 Chocolatey）安装的 Hugo也是可以的 创建GitHub-Blog仓库 在Github创建新的仓库，仓库名称为用户名.github.io，也可添加README file，创建后可克隆到本地。
+    <p>Hugo下载与安装1 到Github下载Hugo的二进制文件，解压到合适位置。 在电脑中添加环境变量。“环境变量”-“Path”-“编辑环境变量”-“新建”-“D:\Application\hugo”，确定即可 验证其是否安装成功，在终端中输入hugo serson，出现版本号即可 注：下载安装的方法并不唯一，比如通过包管理器（如 Homebrew 或 Chocolatey）安装的 Hugo也是可以的 创建GitHub-Blog仓库 在Github创建新的仓库，仓库名称为用户名.github.io，也可添加README file，创建后可克隆到本地。
 Hugo_Blog创建 创建Hugo网站，并进入网站目录 hugo new site blog_name cd blog_name 站点目录结构如下： hugo.yaml(hugo.toml)：Hugo 的配置文件，其中包含你可以设置和自定义的站点配置选项。(原本为hugo.toml，可以改为hugo.yaml格式的，方便编辑) content/：该目录通常包含你的站点的内容，如文章、页面和资源文件。你可以根据自己的需要在此目录下创建子目录和文件。 data/：该目录用于存放数据文件，你可以在 Hugo 模板中使用这些数据文件来生成动态内容。 archetypes/：该目录包含用于创建新内容的模板文件。当你使用 hugo new 命令创建新的内容时，Hugo 将基于这些模板文件生成新的文件。 layouts/：该目录包含 Hugo 网站的布局模板文件，用于定义站点的整体结构和样式 static/：该目录用于存放静态文件，如图像、CSS 和 JavaScript 文件。这些文件会直接复制到生成的网站中，而无需经过 Hugo 的处理。 themes/：如果你使用了一个或多个主题，它们将被放置在此目录下。主题包含布局文件、样式和其他资源，可以覆盖站点的默认设置。 public/（默认输出目录）：Hugo 生成的最终网站文件将存放在此目录下。该目录包含完整的 HTML 文件和其他生成的资源。(本站将输出改为了docs/) 添加主题PaperMod git init git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod 在hugo.yaml中添加theme: PaperMod即可 本地预览，运行Hugo服务器，访问http://localhost:1313进行预览 hugo server -D hugo server -D -F --cleanDestinationDir 以上两个命令选择其一即可，--cleanDestinationDir可以清除过去的重新生产网站 创建文章 hugo new posts/Hello_world....</p>
   </div>
   <footer class="entry-footer"><span title='2023-12-18 23:52:20 +0800 CST'>2023-12-18</span>&nbsp;·&nbsp;8 min
