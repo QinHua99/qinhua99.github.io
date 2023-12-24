@@ -63,7 +63,7 @@ markup:
         # 猜测语法
         guessSyntax: true
         # 行号
-        lineNos: true
+        lineNos: false
         # noClasses: false
         # style: monokai
         # 代码高亮样式

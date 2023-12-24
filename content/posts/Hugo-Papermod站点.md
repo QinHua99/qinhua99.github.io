@@ -406,14 +406,14 @@ params:
       overflow-y: auto;
   }
 
-  .toc .inner::-webkit-scrollbar-thumb {  /*滚动条*/
+  .toc .inner::-webkit-scrollbar-thumb {  /*滚动条*/                                             
       background: var(--border);
       border: 7px solid var(--theme);
       border-radius: var(--radius);
   }
 
   .toc li ul {
-      margin-inline-start: calc(var(--gap) * 0.5);
+      margin-inline-start: calc(var(--gap) * 0.5);                                               
       list-style-type: none;
   }
 
