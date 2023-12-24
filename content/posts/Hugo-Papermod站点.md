@@ -182,7 +182,7 @@ params:
 ```
 ## 公式问题<sup>[9](#rf9)</sup> 
 按照[PaperMod官方](https://adityatelange.github.io/hugo-PaperMod/posts/math-typesetting/)的配置后，当插入公式存在无法显示，主要由于换行。   
-**解决：**对于换行的`\\`要使用`\\\`来替代即可 
+**解决**：对于换行的`\\`要使用`\\\`来替代即可 
 ## 目录放在侧面<sup>[2](#rf2)</sup>   
   对`layouts/partials/toc.html`文件代码替换如如下代码
   ```html
