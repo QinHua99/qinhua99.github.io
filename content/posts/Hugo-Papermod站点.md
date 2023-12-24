@@ -165,7 +165,6 @@ params:
       threshold: 0.4
       minMatchCharLength: 0
       keys: ["title", "permalink", "summary", "content"]    
-  
     # 主题配置
     homeInfoParams:
         Title: "👋 Welcome Stranger!"
@@ -181,7 +180,7 @@ params:
       - name: "zhihu"
         url: "https://www.zhihu.com/people/jiu-meng-zhu-96"
 ```
-- 目录放在侧面<sup>x</sup>
+- 目录放在侧面<sup>x</sup>   
   对`layouts/partials/toc.html`文件代码替换如如下代码
   ```html
   {{- $headers := findRE "<h[1-6].*?>(.|\n])+?</h[1-6]>" .Content -}}
@@ -339,13 +338,102 @@ params:
   </script>
   {{- end }}  
   ```
-# 自定义字体和代码   
+  修改`css/extended/blank.css`，添加如下代码
+  ```css
+  :root {
+      --nav-width: 1380px;
+      --article-width: 650px;
+      --toc-width: 300px;
+  }
+
+  .toc {
+      margin: 0 2px 40px 2px;
+      border: 1px solid var(--border);
+      background: var(--entry);
+      border-radius: var(--radius);
+      padding: 0.4em;
+  }
+
+  .toc-container.wide {
+      position: absolute;
+      height: 100%;
+      border-right: 1px solid var(--border);
+      left: calc((var(--toc-width) + var(--gap)) * -1);
+      top: calc(var(--gap) * 2);
+      width: var(--toc-width);
+  }
+
+  .wide .toc {
+      position: sticky;
+      top: var(--gap);
+      border: unset;
+      background: unset;
+      border-radius: unset;
+      width: 100%;
+      margin: 0 2px 40px 2px;
+  }
+
+  .toc details summary {
+      cursor: zoom-in;
+      margin-inline-start: 20px;
+      padding: 12px 0;
+  }
+
+  .toc details[open] summary {
+      font-weight: 500;
+  }
+
+  .toc-container.wide .toc .inner {
+      margin: 0;
+  }
+
+  .active {
+      font-size: 110%;
+      font-weight: 600;
+  }
+
+  .toc ul {
+      list-style-type: circle;
+  }
+
+  .toc .inner {
+      margin: 0 0 0 20px;
+      padding: 0px 15px 15px 20px;
+      font-size: 16px;
+
+      /*目录显示高度*/
+      max-height: 83vh;
+      overflow-y: auto;
+  }
+
+  .toc .inner::-webkit-scrollbar-thumb {  /*滚动条*/
+      background: var(--border);
+      border: 7px solid var(--theme);
+      border-radius: var(--radius);
+  }
+
+  .toc li ul {
+      margin-inline-start: calc(var(--gap) * 0.5);
+      list-style-type: none;
+  }
+
+  .toc li {
+      list-style: none;
+      font-size: 0.95rem;
+      padding-bottom: 5px;
+  }
+
+  .toc li a:hover {
+      color: var(--secondary);
+  }
+  ```
+- 自定义字体和代码<sup>1,2</sup>   
   字体选择的是[LXGW WenKai/霞鹜文楷](https://github.com/lxgw/LxgwWenKai)，参考其[网页嵌入](https://github.com/lxgw/LxgwWenKai/issues/24)实现<sup>1,2</sup>，在`layouts/partials/extend_head.html`中插入HTML代码
   ```html
   <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/style.css" />
   ```
   在`assets/css/extended/blank.css`中插入CCS即可，`Consolas`是本博客采用的字体   
-  ```ccs
+  ```css
    /*字体*/
    body {
      font-family: "LXGW WenKai Screen", sans-serif !important;
@@ -360,5 +448,50 @@ params:
     max-height: 40rem;
     }
   ```
+- Fancybox 实现图片灯箱/放大功能  
+  根据[官方](https://fancyapps.com/fancybox/getting-started/)的教程和结合大佬<sup>1,2</sup>的描述得出，在`layouts/partials/footer.html`中加入如下代码   
+  ```html
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 
-  # Reference 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  ```
+  为了方便引用图片，比如给图片居中的属性，则创建`layouts/shortcodes/fancybox_figure.html`，添加代码如下
+  ```html
+  <figure{{ if or (.Get "class") (eq (.Get "align") "center") }} class="
+            {{- if eq (.Get "align") "center" }}align-center {{ end }}
+            {{- with .Get "class" }}{{ . }}{{- end }}"
+    {{- end -}}>
+        <a href="{{ .Get "src" }}" data-fancybox="gallery">
+            <img loading="lazy" src="{{ .Get "src" }}{{- if eq (.Get "align") "center" }}#center{{- end }}"
+                {{- if or (.Get "alt") (.Get "caption") }}
+                alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify| plainify }}{{ end }}"
+                {{- end -}}
+                {{- with .Get "width" }} width="{{ . }}"{{ end -}}
+                {{- with .Get "height" }} height="{{ . }}"{{ end -}}
+            />
+        </a>
+        {{- if or (or (.Get "title") (.Get "caption")) (.Get "attr") -}}
+            <figcaption>
+                {{ with (.Get "title") -}}
+                    {{ . }}
+                {{- end -}}
+                {{- if or (.Get "caption") (.Get "attr") -}}<p>
+                    {{- .Get "caption" | markdownify -}}
+                    {{- with .Get "attrlink" }}
+                        <a href="{{ . }}">
+                    {{- end -}}
+                    {{- .Get "attr" | markdownify -}}
+                    {{- if .Get "attrlink" }}</a>{{ end }}</p>
+                {{- end }}
+            </figcaption>
+        {{- end }}
+  </figure>
+  ```  
+  引用：`center`居中（可选），`caption`：描述，`src`：图片
+  ```html
+  {{< fancybox_figure align=center src="picture.png" caption="Caption #1" >}}
+  ```     
+# 部署到Github
+
+# Reference 
