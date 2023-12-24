@@ -96,6 +96,8 @@ params:
     ShareButtons: ["facebook", "telegram"] # To customize which share buttons to be enabled on page
     # 是否显示阅读时间
     ShowReadingTime: true
+    # 代码块是否自动横向展开
+    extendCodeBackground : false
     # 数学公式
     math: true  
     # 禁用特殊的第一篇文章样式

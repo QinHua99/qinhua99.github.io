@@ -491,7 +491,7 @@ params:
   引用：`center`居中（可选），`caption`：描述，`src`：图片
   {{< fancybox_figure align=center src="hugo-picture.png" caption="示例" >}}  
 # 部署到Github
-将配置的blog文件夹下的内容复制到Github站点文件下（见创建GitHub-Blog仓库），运行如下代码进行上传，期间需要输入`Github`的用户信息，也可以直接配置`ssh key`
+将配置的blog文件夹下的内容复制到Github站点文件下（见[创建GitHub-Blog仓库](#创建github-blog仓库)），运行如下代码进行上传，期间需要输入`Github`的用户信息，也可以直接配置`ssh key`
 ```shell
 hugo -F --cleanDestinationDir 
 git add .
