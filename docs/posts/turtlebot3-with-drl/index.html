@@ -331,40 +331,40 @@
 <ol>
 <li>
 <p>在此已经默认已经安装好了ROS等相关内容，只需要安装Turtlebot3的相关依赖</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-s" data-lang="s"><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">ros</span><span class="o">-</span><span class="n">melodic</span><span class="o">-</span><span class="n">desktop</span><span class="o">-</span><span class="n">full</span> <span class="n">ros</span><span class="o">-</span><span class="n">melodic</span><span class="o">-</span><span class="n">joy</span> <span class="n">ros</span><span class="o">-</span><span class="n">melodic</span><span class="o">-</span><span class="n">teleop</span><span class="o">-</span><span class="n">twist</span><span class="o">-</span><span class="n">joy</span> <span class="n">ros</span><span class="o">-</span><span class="n">melodic</span><span class="o">-</span><span class="n">teleop</span><span class="o">-</span><span class="n">twist</span><span class="o">-</span><span class="n">keyboard</span> <span class="n">ros</span><span class="o">-</span><span class="n">melodic</span><span class="o">-</span><span class="n">laser</span><span class="o">-</span><span class="n">proc</span> <span class="n">ros</span><span class="o">-</span><span class="n">melodic</span><span class="o">-</span><span class="n">rgbd</span><span class="o">-</span><span class="n">launch</span> <span class="n">ros</span><span class="o">-</span><span class="n">melodic</span><span class="o">-</span><span class="n">depthimage</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">laserscan</span> <span class="n">ros</span><span class="o">-</span><span class="n">melodic</span><span class="o">-</span><span class="n">rosserial</span><span class="o">-</span><span class="n">arduino</span> <span class="n">ros</span><span class="o">-</span><span class="n">melodic</span><span class="o">-</span><span class="n">rosserial</span><span class="o">-</span><span class="n">python</span> <span class="n">ros</span><span class="o">-</span><span class="n">melodic</span><span class="o">-</span><span class="n">rosserial</span><span class="o">-</span><span class="n">server</span> <span class="n">ros</span><span class="o">-</span><span class="n">melodic</span><span class="o">-</span><span class="n">rosserial</span><span class="o">-</span><span class="n">client</span> <span class="n">ros</span><span class="o">-</span><span class="n">melodic</span><span class="o">-</span><span class="n">rosserial</span><span class="o">-</span><span class="n">msgs</span> <span class="n">ros</span><span class="o">-</span><span class="n">melodic</span><span class="o">-</span><span class="n">amcl</span> <span class="n">ros</span><span class="o">-</span><span class="n">melodic</span><span class="o">-</span><span class="n">map</span><span class="o">-</span><span class="n">server</span> <span class="n">ros</span><span class="o">-</span><span class="n">melodic</span><span class="o">-</span><span class="n">move</span><span class="o">-</span><span class="n">base</span> <span class="n">ros</span><span class="o">-</span><span class="n">melodic</span><span class="o">-</span><span class="n">urdf</span> <span class="n">ros</span><span class="o">-</span><span class="n">melodic</span><span class="o">-</span><span class="n">xacro</span> <span class="n">ros</span><span class="o">-</span><span class="n">melodic</span><span class="o">-</span><span class="n">compressed</span><span class="o">-</span><span class="n">image</span><span class="o">-</span><span class="n">transport</span> <span class="n">ros</span><span class="o">-</span><span class="n">melodic</span><span class="o">-</span><span class="n">rqt</span><span class="o">-</span><span class="n">image</span><span class="o">-</span><span class="n">view</span> <span class="n">ros</span><span class="o">-</span><span class="n">melodic</span><span class="o">-</span><span class="n">gmapping</span> <span class="n">ros</span><span class="o">-</span><span class="n">melodic</span><span class="o">-</span><span class="n">navigation</span> <span class="n">ros</span><span class="o">-</span><span class="n">melodic</span><span class="o">-</span><span class="n">interactive</span><span class="o">-</span><span class="n">markers</span> <span class="n">ros</span><span class="o">-</span><span class="n">melodic</span><span class="o">-</span><span class="n">turtlebot3</span><span class="o">-</span><span class="n">gazebo</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install ros-melodic-desktop-full ros-melodic-joy ros-melodic-teleop-twist-joy ros-melodic-teleop-twist-keyboard ros-melodic-laser-proc ros-melodic-rgbd-launch ros-melodic-depthimage-to-laserscan ros-melodic-rosserial-arduino ros-melodic-rosserial-python ros-melodic-rosserial-server ros-melodic-rosserial-client ros-melodic-rosserial-msgs ros-melodic-amcl ros-melodic-map-server ros-melodic-move-base ros-melodic-urdf ros-melodic-xacro ros-melodic-compressed-image-transport ros-melodic-rqt-image-view ros-melodic-gmapping ros-melodic-navigation ros-melodic-interactive-markers ros-melodic-turtlebot3-gazebo
 </span></span></code></pre></div></li>
 <li>
 <p>创建需要的工作空间，此处命名为catkin_ws</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-s" data-lang="s"><span class="line"><span class="cl"><span class="n">mkdir</span> <span class="o">-</span><span class="n">p</span> <span class="n">catkin_ws</span><span class="o">/</span><span class="n">src</span>
-</span></span><span class="line"><span class="cl"><span class="n">cd</span> <span class="o">~/</span><span class="n">catkin_ws</span><span class="o">/</span><span class="n">src</span><span class="o">/</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 克隆相关的包</span>
-</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="o">://</span><span class="n">github.com</span><span class="o">/</span><span class="n">ROBOTIS</span><span class="o">-</span><span class="n">GIT</span><span class="o">/</span><span class="n">turtlebot3.git</span>
-</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="o">://</span><span class="n">github.com</span><span class="o">/</span><span class="n">ROBOTIS</span><span class="o">-</span><span class="n">GIT</span><span class="o">/</span><span class="n">turtlebot3_msgs.git</span>
-</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="o">://</span><span class="n">github.com</span><span class="o">/</span><span class="n">ROBOTIS</span><span class="o">-</span><span class="n">GIT</span><span class="o">/</span><span class="n">turtlebot3_simulations.git</span>
-</span></span><span class="line"><span class="cl"><span class="n">cd</span> <span class="o">~/</span><span class="n">catkin_ws</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 编译</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">mkdir</span> <span class="n">-p</span> <span class="n">catkin_ws</span><span class="p">/</span><span class="n">src</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd </span><span class="p">~/</span><span class="n">catkin_ws</span><span class="p">/</span><span class="n">src</span><span class="p">/</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 克隆相关的包</span>
+</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="nb">ROBOTIS-GIT</span><span class="p">/</span><span class="n">turtlebot3</span><span class="p">.</span><span class="py">git</span>
+</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="nb">ROBOTIS-GIT</span><span class="p">/</span><span class="n">turtlebot3_msgs</span><span class="p">.</span><span class="py">git</span>
+</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="nb">ROBOTIS-GIT</span><span class="p">/</span><span class="n">turtlebot3_simulations</span><span class="p">.</span><span class="py">git</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd </span><span class="p">~/</span><span class="n">catkin_ws</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 编译</span>
 </span></span><span class="line"><span class="cl"><span class="n">catkin_make</span>
 </span></span></code></pre></div></li>
 <li>
 <p>设置相关的环境，将setup.bash文件写入.bashrc中，并添加Turtlebot3的模型(提供两种方式供选择)</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-s" data-lang="s"><span class="line"><span class="cl"><span class="c1"># First</span>
-</span></span><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">gedit</span> <span class="n">.bashrc</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="c1"># First</span>
+</span></span><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">gedit</span> <span class="o">.</span><span class="n">bashrc</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># 添加和修改内容</span>
-</span></span><span class="line"><span class="cl"><span class="n">source</span> <span class="o">~/</span><span class="n">catkin_ws</span><span class="o">/</span><span class="n">devel</span><span class="o">/</span><span class="n">setup.bash</span>
-</span></span><span class="line"><span class="cl"><span class="n">export</span> <span class="n">TURTLEBOT3_MODEL</span> <span class="o">=</span> <span class="n">burger</span>
+</span></span><span class="line"><span class="cl"><span class="n">source</span> <span class="o">~/</span><span class="n">catkin_ws</span><span class="o">/</span><span class="n">devel</span><span class="o">/</span><span class="n">setup</span><span class="o">.</span><span class="n">bash</span>
+</span></span><span class="line"><span class="cl"><span class="k">export</span> <span class="n">TURTLEBOT3_MODEL</span> <span class="o">=</span> <span class="n">burger</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># 关闭.bashrc</span>
-</span></span><span class="line"><span class="cl"><span class="n">source</span> <span class="n">.bashrc</span>
+</span></span><span class="line"><span class="cl"><span class="n">source</span> <span class="o">.</span><span class="n">bashrc</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># Second</span>
-</span></span><span class="line"><span class="cl"><span class="n">echo</span> <span class="s">&#34;source  ~/catkin_ws/devel/setup.bash&#34;</span> <span class="o">&gt;&gt;</span> <span class="o">~/</span><span class="n">.bashrc</span>
-</span></span><span class="line"><span class="cl"><span class="n">echo</span> <span class="s">&#34;export TURTLEBOT3_MODEL = burger&#34;</span> <span class="o">&gt;&gt;</span> <span class="o">~/</span><span class="n">.bashrc</span>
-</span></span><span class="line"><span class="cl"><span class="n">source</span> <span class="n">.bashrc</span>
+</span></span><span class="line"><span class="cl"><span class="n">echo</span> <span class="s2">&#34;source  ~/catkin_ws/devel/setup.bash&#34;</span> <span class="o">&gt;&gt;</span> <span class="o">~/.</span><span class="n">bashrc</span>
+</span></span><span class="line"><span class="cl"><span class="n">echo</span> <span class="s2">&#34;export TURTLEBOT3_MODEL = burger&#34;</span> <span class="o">&gt;&gt;</span> <span class="o">~/.</span><span class="n">bashrc</span>
+</span></span><span class="line"><span class="cl"><span class="n">source</span> <span class="o">.</span><span class="n">bashrc</span>
 </span></span></code></pre></div></li>
 <li>
 <p>测试Turtlebot3是否安装成功（仿真测试）</p>
 <ul>
 <li>
 <p>启动Gazebo仿真环境</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-s" data-lang="s"><span class="line"><span class="cl"><span class="n">roslaunch</span> <span class="n">turtlebot3_gazebo</span> <span class="n">turtlebot3_world.launch</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">roslaunch turtlebot3_gazebo turtlebot3_world.launch
 </span></span></code></pre></div><p>如出现如下错误：<br>
 <figure class="align-center ">
          <a href="ttb3-drl-1.png" data-fancybox="gallery">
@@ -383,21 +383,21 @@
 </li>
 <li>
 <p>启动SLAM</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-s" data-lang="s"><span class="line"><span class="cl"><span class="n">roslaunch</span> <span class="n">turtlebot3_slam</span> <span class="n">turtlebot3_slam.launch</span> <span class="n">slam_methods</span><span class="o">:=</span><span class="n">gmapping</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:<span class="o">=</span>gmapping
 </span></span></code></pre></div></li>
 <li>
 <p>键盘控制</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-s" data-lang="s"><span class="line"><span class="cl"><span class="n">roslaunch</span> <span class="n">turtlebot3_teleop</span> <span class="n">turtlebot3_teleop_key.launch</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 </span></span></code></pre></div><p>注：如果出现没有**“rospkg”*则运行<code>pip install rospkg</code>即可。现在可以正常操作机器人进行建图。</p>
 </li>
 <li>
 <p>地图保存</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-s" data-lang="s"><span class="line"><span class="cl"><span class="n">rosrun</span> <span class="n">map_server</span> <span class="n">map_saver</span> <span class="o">-</span><span class="n">f</span> <span class="o">~/</span><span class="n">map</span><span class="o">/</span><span class="n">map_name</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">rosrun map_server map_saver -f ~/map/map_name
 </span></span></code></pre></div></li>
 <li>
 <p>导航</p>
 <p>关闭以上所有终端，重新启动Gazebo环境，并运行导航节点：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-s" data-lang="s"><span class="line"><span class="cl"><span class="n">roslaunch</span> <span class="n">turtlebot3_navigation</span> <span class="n">turtlebot3_navigation.launch</span> <span class="n">map_file</span><span class="o">:=~/</span><span class="n">map</span><span class="o">/</span><span class="n">map_name.yaml</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:<span class="o">=</span>~/map/map_name.yaml
 </span></span></code></pre></div><figure class="align-center ">
          <a href="ttb3-drl-3.png" data-fancybox="gallery">
              <img loading="lazy" src="ttb3-drl-3.png#center"/>
@@ -424,27 +424,27 @@
 <ul>
 <li>
 <p>首先创建虚拟环境，并完成初始化</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">conda create -n turtlebot3 python=2.7
-</span></span><span class="line"><span class="cl">conda activate turtlebot3
-</span></span><span class="line"><span class="cl">conda install numpy
-</span></span><span class="line"><span class="cl"># 检测python版本
-</span></span><span class="line"><span class="cl">python --version
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">conda</span> <span class="n">create</span> <span class="n">-n</span> <span class="n">turtlebot3</span> <span class="n">python</span><span class="p">=</span><span class="mf">2.7</span>
+</span></span><span class="line"><span class="cl"><span class="n">conda</span> <span class="n">activate</span> <span class="n">turtlebot3</span>
+</span></span><span class="line"><span class="cl"><span class="n">conda</span> <span class="n">install</span> <span class="n">numpy</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 检测python版本</span>
+</span></span><span class="line"><span class="cl"><span class="n">python</span> <span class="p">-</span><span class="n">-version</span>
 </span></span></code></pre></div></li>
 <li>
 <p>安装ROS需要的包</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">pip</span> <span class="n">install</span> <span class="n">catkin</span><span class="o">-</span><span class="n">tools</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">pip</span> <span class="n">install</span> <span class="nb">catkin-tools</span>
 </span></span><span class="line"><span class="cl"><span class="n">pip</span> <span class="n">install</span> <span class="n">rospkg</span>
 </span></span></code></pre></div></li>
 <li>
 <p>安装Pytorch，详细参考<a href="https://pytorch.org/get-started/previous-versions/">官网</a>，Python版本比较低，这个Pytorch可以使用</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">pip</span> <span class="n">install</span> <span class="n">torch</span><span class="o">==</span><span class="mf">1.4</span><span class="o">.</span><span class="mi">0</span><span class="o">+</span><span class="n">cu92</span> <span class="n">torchvision</span><span class="o">==</span><span class="mf">0.5</span><span class="o">.</span><span class="mi">0</span><span class="o">+</span><span class="n">cu92</span> <span class="o">-</span><span class="n">f</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">download</span><span class="o">.</span><span class="n">pytorch</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">whl</span><span class="o">/</span><span class="n">torch_stable</span><span class="o">.</span><span class="n">html</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">pip</span> <span class="n">install</span> <span class="n">torch</span><span class="p">==</span><span class="mf">1.4</span><span class="p">.</span><span class="mf">0</span><span class="p">+</span><span class="n">cu92</span> <span class="n">torchvision</span><span class="p">==</span><span class="mf">0.5</span><span class="p">.</span><span class="mf">0</span><span class="p">+</span><span class="n">cu92</span> <span class="o">-f</span> <span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="n">download</span><span class="p">.</span><span class="py">pytorch</span><span class="p">.</span><span class="n">org</span><span class="p">/</span><span class="n">whl</span><span class="p">/</span><span class="n">torch_stable</span><span class="p">.</span><span class="py">html</span>
 </span></span></code></pre></div><p>测试Pytorch环境是否成功：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># 进入python
-</span></span><span class="line"><span class="cl">python
-</span></span><span class="line"><span class="cl">torch.cuda.is_available()
-</span></span><span class="line"><span class="cl"># 查看返回值 是否为 True 根据错误信息进行补充安装
-</span></span><span class="line"><span class="cl"># 如下错误 根据错误修改即可
-</span></span><span class="line"><span class="cl">pip install future 
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 进入python</span>
+</span></span><span class="line"><span class="cl"><span class="n">python</span>
+</span></span><span class="line"><span class="cl"><span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 查看返回值 是否为 True 根据错误信息进行补充安装</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 如下错误 根据错误修改即可</span>
+</span></span><span class="line"><span class="cl"><span class="n">pip</span> <span class="n">install</span> <span class="n">future</span> 
 </span></span></code></pre></div><figure class="align-center ">
       <a href="ttb3-drl-5.png" data-fancybox="gallery">
           <img loading="lazy" src="ttb3-drl-5.png#center"/>
@@ -460,39 +460,39 @@
 <ol>
 <li>
 <p>在catkin_ws/src下下载所需要的功能包，并进行重新编译，最后用VScode打开</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-S" data-lang="S"><span class="line"><span class="cl"><span class="n">cd</span> <span class="o">~/</span><span class="n">catkin_ws</span><span class="o">/</span><span class="n">src</span><span class="o">/</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 克隆相关的包</span>
-</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="o">://</span><span class="n">github.com</span><span class="o">/</span><span class="n">dovanhuong</span><span class="o">/</span><span class="n">project.git</span>
-</span></span><span class="line"><span class="cl"><span class="n">cd</span> <span class="o">~/</span><span class="n">catkin_ws</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 编译</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nb">cd </span><span class="p">~/</span><span class="n">catkin_ws</span><span class="p">/</span><span class="n">src</span><span class="p">/</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 克隆相关的包</span>
+</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">dovanhuong</span><span class="p">/</span><span class="n">project</span><span class="p">.</span><span class="py">git</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd </span><span class="p">~/</span><span class="n">catkin_ws</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 编译</span>
 </span></span><span class="line"><span class="cl"><span class="n">catkin_make</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># VScode</span>
-</span></span><span class="line"><span class="cl"><span class="n">code</span> <span class="n">.
-</span></span></span></code></pre></div></li>
-<li>
-<p>修改Turtlebot3参数：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-S" data-lang="S"><span class="line"><span class="cl"><span class="c1"># 修改turtlebot3/turtlebot3_description/urdf/turtlebot3_burger.gazebo.xacro</span>
-</span></span><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">gedit</span> <span class="n">turtlebot3_burger.gazebo.xacro</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 内容修改如下</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 激光雷达可视化</span>
-</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">xacro</span><span class="o">:</span><span class="n">arg</span> <span class="n">name</span><span class="o">=</span><span class="s">&#34;laser_visual&#34;</span> <span class="n">default</span><span class="o">=</span><span class="s">&#34;false&#34;</span><span class="o">/&gt;</span>   <span class="c1"># Visualization of LDS. If you want to see LDS, set to `true`</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 采样的数量</span>
-</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">scan</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="o">&lt;</span><span class="n">horizontal</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="n">samples</span><span class="o">&gt;</span><span class="m">360</span><span class="o">&lt;/</span><span class="n">samples</span><span class="o">&gt;</span> <span class="c1"># The number of sample. Modify it to 10</span>
-</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="n">resolution</span><span class="o">&gt;</span><span class="m">1</span><span class="o">&lt;/</span><span class="n">resolution</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="n">min_angle</span><span class="o">&gt;</span><span class="m">0.0</span><span class="o">&lt;/</span><span class="n">min_angle</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="n">max_angle</span><span class="o">&gt;</span><span class="m">6.28319</span><span class="o">&lt;/</span><span class="n">max_angle</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="o">&lt;/</span><span class="n">horizontal</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="o">&lt;/</span><span class="n">scan</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="c"># VScode</span>
+</span></span><span class="line"><span class="cl"><span class="n">code</span> <span class="p">.</span>
 </span></span></code></pre></div></li>
 <li>
+<p>修改Turtlebot3参数：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-mysql" data-lang="mysql"><span class="line"><span class="cl"><span class="c1"># 修改turtlebot3/turtlebot3_description/urdf/turtlebot3_burger.gazebo.xacro
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">sudo</span><span class="w"> </span><span class="n">gedit</span><span class="w"> </span><span class="n">turtlebot3_burger</span><span class="p">.</span><span class="n">gazebo</span><span class="p">.</span><span class="n">xacro</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1"># 内容修改如下
+</span></span></span><span class="line"><span class="cl"><span class="c1"># 激光雷达可视化
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="o">&lt;</span><span class="n">xacro</span><span class="p">:</span><span class="n">arg</span><span class="w"> </span><span class="n">name</span><span class="o">=</span><span class="s2">&#34;laser_visual&#34;</span><span class="w"> </span><span class="k">default</span><span class="o">=</span><span class="s2">&#34;false&#34;</span><span class="o">/&gt;</span><span class="w">   </span><span class="c1"># Visualization of LDS. If you want to see LDS, set to `true`
+</span></span></span><span class="line"><span class="cl"><span class="c1"># 采样的数量
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="o">&lt;</span><span class="n">scan</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="o">&lt;</span><span class="n">horizontal</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="o">&lt;</span><span class="n">samples</span><span class="o">&gt;</span><span class="mi">360</span><span class="o">&lt;/</span><span class="n">samples</span><span class="o">&gt;</span><span class="w"> </span><span class="c1"># The number of sample. Modify it to 10
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">    </span><span class="o">&lt;</span><span class="n">resolution</span><span class="o">&gt;</span><span class="mi">1</span><span class="o">&lt;/</span><span class="n">resolution</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="o">&lt;</span><span class="n">min_angle</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="o">&lt;/</span><span class="n">min_angle</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="o">&lt;</span><span class="n">max_angle</span><span class="o">&gt;</span><span class="mi">6</span><span class="p">.</span><span class="mi">28319</span><span class="o">&lt;/</span><span class="n">max_angle</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="o">&lt;/</span><span class="n">horizontal</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">&lt;/</span><span class="n">scan</span><span class="o">&gt;</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
 <p>指定Python2.7编译运行ddpg_stage_1.py，在该文件开头加入如下代码</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-s" data-lang="s"><span class="line"><span class="cl"><span class="c1">#! /usr/bin/env python2.7</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="ch">#! /usr/bin/env python2.7</span>
 </span></span></code></pre></div></li>
 <li>
 <p>启动仿真环境，以stage_1为例</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-s" data-lang="s"><span class="line"><span class="cl"><span class="n">roslaunch</span> <span class="n">project</span> <span class="n">ddpg_stage_</span><span class="p">{</span><span class="n">number_of_stage</span><span class="p">}</span><span class="n">.launch</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">roslaunch</span> <span class="n">project</span> <span class="n">ddpg_stage_</span><span class="p">{</span><span class="n">number_of_stage</span><span class="p">}.</span><span class="py">launch</span>
 </span></span></code></pre></div><figure class="align-center ">
        <a href="ttb3-drl-6.png" data-fancybox="gallery">
            <img loading="lazy" src="ttb3-drl-6.png#center"
@@ -505,9 +505,9 @@
 <ol>
 <li>
 <p>启动DDPG算法</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-s" data-lang="s"><span class="line"><span class="cl"><span class="n">roslaunch</span> <span class="n">project</span> <span class="n">ddpg_stage_</span><span class="p">{</span><span class="n">number_of_stage</span><span class="p">}</span><span class="n">.launch</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">roslaunch</span> <span class="n">project</span> <span class="n">ddpg_stage_</span><span class="p">{</span><span class="n">number_of_stage</span><span class="p">}.</span><span class="py">launch</span>
 </span></span></code></pre></div><p>第一次可能会出现错误，可以根据错误对相关的库进行安装即可，比如</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-s" data-lang="s"><span class="line"><span class="cl"><span class="n">pip</span> <span class="n">install</span> <span class="n">pyyaml</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">pip</span> <span class="n">install</span> <span class="n">pyyaml</span>
 </span></span></code></pre></div><figure class="align-center ">
           <a href="ttb3-drl-7.png" data-fancybox="gallery">
               <img loading="lazy" src="ttb3-drl-7.png#center"/>
@@ -549,11 +549,11 @@
 <p>以上都是训练的过程，训练结果与多方因素相关，需要深入研究代码和DDPG原理，后续根据需要进行修改。</p>
 <h1 id="anaconda技巧">Anaconda技巧<a hidden class="anchor" aria-hidden="true" href="#anaconda技巧">#</a></h1>
 <p>并不是每次都需要虚拟环境的，并且每次激活环境都需要输入对应命令，麻烦不够简单，为此提前在.bashrc中加入相应的<code>alias</code>命令。这样只需要在终端中输入<code>starte</code>即可激活anaconda虚拟环境，输入<code>turtlebot</code>即可进入turtlebot的虚拟环境中。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-s" data-lang="s"><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">gedit</span> <span class="n">.bashrc</span>
-</span></span><span class="line"><span class="cl"><span class="n">alias</span> <span class="n">turtlebot</span><span class="o">=</span><span class="s">&#39;source activate turtlebot&#39;</span>
-</span></span><span class="line"><span class="cl"><span class="n">alias</span> <span class="n">close_env</span><span class="o">=</span><span class="s">&#39;conda deactivate&#39;</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 需要注释前面关于conda initialize的内容</span>
-</span></span><span class="line"><span class="cl"><span class="n">alias</span> <span class="n">starte</span><span class="o">=</span><span class="s">&#39;source ~/anaconda3/bin/activate&#39;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo gedit .bashrc
+</span></span><span class="line"><span class="cl">alias turtlebot=&#39;source activate turtlebot&#39;
+</span></span><span class="line"><span class="cl">alias close_env=&#39;conda deactivate&#39;
+</span></span><span class="line"><span class="cl"># 需要注释前面关于conda initialize的内容
+</span></span><span class="line"><span class="cl">alias starte=&#39;source ~/anaconda3/bin/activate&#39;
 </span></span></code></pre></div><figure class="align-center ">
     <a href="ttb3-drl-8.png" data-fancybox="gallery">
         <img loading="lazy" src="ttb3-drl-8.png#center"/>

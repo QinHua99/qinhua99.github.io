@@ -18,13 +18,13 @@ summary: "搭建基于Turtlebot3的DRL仿真环境" # 文章简单描述，会�
 
 1. 在此已经默认已经安装好了ROS等相关内容，只需要安装Turtlebot3的相关依赖
 
-   ```s
+   ```bash
    sudo apt install ros-melodic-desktop-full ros-melodic-joy ros-melodic-teleop-twist-joy ros-melodic-teleop-twist-keyboard ros-melodic-laser-proc ros-melodic-rgbd-launch ros-melodic-depthimage-to-laserscan ros-melodic-rosserial-arduino ros-melodic-rosserial-python ros-melodic-rosserial-server ros-melodic-rosserial-client ros-melodic-rosserial-msgs ros-melodic-amcl ros-melodic-map-server ros-melodic-move-base ros-melodic-urdf ros-melodic-xacro ros-melodic-compressed-image-transport ros-melodic-rqt-image-view ros-melodic-gmapping ros-melodic-navigation ros-melodic-interactive-markers ros-melodic-turtlebot3-gazebo
    ```
 
 2. 创建需要的工作空间，此处命名为catkin_ws
 
-   ```s
+   ```powershell
    mkdir -p catkin_ws/src
    cd ~/catkin_ws/src/
    # 克隆相关的包
@@ -38,7 +38,7 @@ summary: "搭建基于Turtlebot3的DRL仿真环境" # 文章简单描述，会�
 
 3. 设置相关的环境，将setup.bash文件写入.bashrc中，并添加Turtlebot3的模型(提供两种方式供选择)
 
-   ```s
+   ```spowershell
    # First
    sudo gedit .bashrc
    # 添加和修改内容
@@ -56,7 +56,7 @@ summary: "搭建基于Turtlebot3的DRL仿真环境" # 文章简单描述，会�
 
    - 启动Gazebo仿真环境
 
-     ```s
+     ```bash
      roslaunch turtlebot3_gazebo turtlebot3_world.launch
      ```
 
@@ -69,12 +69,12 @@ summary: "搭建基于Turtlebot3的DRL仿真环境" # 文章简单描述，会�
      {{< fancybox_figure align=center src="ttb3-drl-2.png" >}}  
    - 启动SLAM
 
-     ```s
+     ```bash
      roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
      ```   
    - 键盘控制
 
-     ```s
+     ```bash
      roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
      ```
 
@@ -82,7 +82,7 @@ summary: "搭建基于Turtlebot3的DRL仿真环境" # 文章简单描述，会�
 
    - 地图保存
 
-     ```s
+     ```bash
      rosrun map_server map_saver -f ~/map/map_name
      ```
 
@@ -90,7 +90,7 @@ summary: "搭建基于Turtlebot3的DRL仿真环境" # 文章简单描述，会�
 
      关闭以上所有终端，重新启动Gazebo环境，并运行导航节点：
 
-     ```s
+     ```bash
      roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=~/map/map_name.yaml
      ```
      {{< fancybox_figure align=center src="ttb3-drl-3.png" >}} 
@@ -108,7 +108,7 @@ summary: "搭建基于Turtlebot3的DRL仿真环境" # 文章简单描述，会�
 
 - 首先创建虚拟环境，并完成初始化
 
-  ```
+  ```powershell
   conda create -n turtlebot3 python=2.7
   conda activate turtlebot3
   conda install numpy
@@ -118,20 +118,20 @@ summary: "搭建基于Turtlebot3的DRL仿真环境" # 文章简单描述，会�
 
 - 安装ROS需要的包
 
-  ```
+  ```powershell
   pip install catkin-tools
   pip install rospkg
   ```
 
 - 安装Pytorch，详细参考[官网](https://pytorch.org/get-started/previous-versions/)，Python版本比较低，这个Pytorch可以使用
 
-  ```
+  ```powershell
   pip install torch==1.4.0+cu92 torchvision==0.5.0+cu92 -f https://download.pytorch.org/whl/torch_stable.html
   ```
 
   测试Pytorch环境是否成功：
 
-  ```
+  ```python
   # 进入python
   python
   torch.cuda.is_available()
@@ -146,7 +146,7 @@ summary: "搭建基于Turtlebot3的DRL仿真环境" # 文章简单描述，会�
 
 1. 在catkin_ws/src下下载所需要的功能包，并进行重新编译，最后用VScode打开
 
-   ```S
+   ```powershell
    cd ~/catkin_ws/src/
    # 克隆相关的包
    git clone https://github.com/dovanhuong/project.git
@@ -159,7 +159,7 @@ summary: "搭建基于Turtlebot3的DRL仿真环境" # 文章简单描述，会�
 
 2. 修改Turtlebot3参数：
 
-   ```S
+   ```
    # 修改turtlebot3/turtlebot3_description/urdf/turtlebot3_burger.gazebo.xacro
    sudo gedit turtlebot3_burger.gazebo.xacro
    # 内容修改如下
@@ -178,26 +178,26 @@ summary: "搭建基于Turtlebot3的DRL仿真环境" # 文章简单描述，会�
 
 3. 指定Python2.7编译运行ddpg_stage_1.py，在该文件开头加入如下代码
 
-   ```s
+   ```python
    #! /usr/bin/env python2.7
    ```
 
 4. 启动仿真环境，以stage_1为例
 
-   ```s
+   ```powershell
    roslaunch project ddpg_stage_{number_of_stage}.launch
    ```
    {{< fancybox_figure align=center src="ttb3-drl-6.png" caption="ddpg_stage_1" >}} 
 
    1. 启动DDPG算法
 
-      ```s
+      ```powershell
       roslaunch project ddpg_stage_{number_of_stage}.launch
       ```
 
       第一次可能会出现错误，可以根据错误对相关的库进行安装即可，比如
 
-      ```s
+      ```powershell
       pip install pyyaml
       ```
       {{< fancybox_figure align=center src="ttb3-drl-7.png" >}} 
@@ -213,7 +213,7 @@ summary: "搭建基于Turtlebot3的DRL仿真环境" # 文章简单描述，会�
 
 并不是每次都需要虚拟环境的，并且每次激活环境都需要输入对应命令，麻烦不够简单，为此提前在.bashrc中加入相应的`alias`命令。这样只需要在终端中输入`starte`即可激活anaconda虚拟环境，输入`turtlebot`即可进入turtlebot的虚拟环境中。
 
-```s
+```
 sudo gedit .bashrc
 alias turtlebot='source activate turtlebot'
 alias close_env='conda deactivate'
