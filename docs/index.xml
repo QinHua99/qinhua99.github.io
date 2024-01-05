@@ -26,62 +26,6 @@
     </item>
     
     <item>
-      <title>Hugo-Papermod</title>
-      <link>https://qinhua99.github.io/posts/hugo-papermod/</link>
-      <pubDate>Mon, 18 Dec 2023 22:52:20 +0800</pubDate>
-      
-      <guid>https://qinhua99.github.io/posts/hugo-papermod/</guid>
-      <description>自定义字体和代码 字体选择的是LXGW WenKai/霞鹜文楷，参考其网页嵌入实现1,2，在layouts/partials/extend_head.html中插入HTML代码
-&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/style.css&amp;#34; /&amp;gt; 在assets/css/extended/blank.css中插入CCS即可，Consolas是本博客采用的字体
-/*字体*/ body { font-family: &amp;#34;LXGW WenKai Screen&amp;#34;, sans-serif !important; } code { font-family: &amp;#34;LXGW WenKai Screen&amp;#34;, sans-serif; } /*code*/ .post-content pre, code { font-family: &amp;#39;Consolas&amp;#39;, sans-serif; max-height: 40rem; } </description>
-    </item>
-    
-    <item>
-      <title>Test</title>
-      <link>https://qinhua99.github.io/posts/test/</link>
-      <pubDate>Thu, 14 Dec 2023 20:21:24 +0800</pubDate>
-      
-      <guid>https://qinhua99.github.io/posts/test/</guid>
-      <description>hajak ajdhak 在网页下方的说明内，找到主题安装的方法
-或者，直接去主题的github网址，里面的readme.md中有说明主题的下载和使用方式，两个方法都是一样的
-于是，根据主题作者提供的命令
-git clone https://github.com/apvarun/blist-hugo-theme.git themes/blist ##获得主题 下载完成后，将 package.json 文件从 themes/showcase 文件夹复制到你的 Hugo 网站根文件夹，然后运行 npm install
-进入themes/blist/exampleSite文件夹中，复制exampleSite中的文件，替换掉Hugo网站根文件夹中的相同命名的文件
-执行命令</description>
-    </item>
-    
-    <item>
-      <title>hello</title>
-      <link>https://qinhua99.github.io/posts/hello/</link>
-      <pubDate>Thu, 14 Dec 2023 17:11:24 +0800</pubDate>
-      
-      <guid>https://qinhua99.github.io/posts/hello/</guid>
-      <description>summary : &amp;ldquo;立于好于&amp;rdquo;
-你好！ &amp;ldquo;IMC(Inter-Module Communication)是Neptus系统中模块之间通信的一种协议或机制。&amp;rdquo;
-IMC是一种轻量级的，消息封装式的通信协议。 IMC定义了一系列的消息类型(Message)，每个消息都包含消息头和消息体。消息头包含源、目标、时间戳等元信息，消息体为实际的数据。 通过IMC，可以实现相互模块之间的收发。 &amp;lt; !&amp;mdash;more &amp;mdash;&amp;gt; IMC支持点对点通信和发布-订阅两种模式。 IMC基于UDP通信，提供了比较高效和实时的消息传递。 Neptus系统中的控制器、控制面板、计划执行器等模块都通过IMC进行交互。新模块可以通过实现IMC来加入系统。 IMC为Neptus系统提供了一个可扩展和灵活的内部通信机制,大大减少了模块间的耦合,也方便新增模块。 &amp;lt;!-- neptus地址 --&amp;gt; &amp;lt;arg name=&amp;#34;neptus_addr&amp;#34; default=&amp;#34;172.22.179.105&amp;#34;/&amp;gt; &amp;lt;!-- ros端地址 --&amp;gt; &amp;lt;arg name=&amp;#34;bridge_addr&amp;#34; default=&amp;#34;172.22.49.214&amp;#34;/&amp;gt; &amp;lt;arg name=&amp;#34;bridge_port&amp;#34; default=&amp;#34;6002&amp;#34;/&amp;gt; </description>
-    </item>
-    
-    <item>
-      <title>Hello_Blog</title>
-      <link>https://qinhua99.github.io/posts/hello_blog/</link>
-      <pubDate>Thu, 14 Dec 2023 17:11:24 +0800</pubDate>
-      
-      <guid>https://qinhua99.github.io/posts/hello_blog/</guid>
-      <description>立于好于</description>
-    </item>
-    
-    <item>
-      <title>IMC话题</title>
-      <link>https://qinhua99.github.io/posts/imc%E8%AF%9D%E9%A2%98/</link>
-      <pubDate>Thu, 14 Dec 2023 17:11:24 +0800</pubDate>
-      
-      <guid>https://qinhua99.github.io/posts/imc%E8%AF%9D%E9%A2%98/</guid>
-      <description>summary : &amp;ldquo;立于好于&amp;rdquo;
-你好！ &amp;ldquo;IMC(Inter-Module Communication)是Neptus系统中模块之间通信的一种协议或机制。&amp;rdquo;
-IMC是一种轻量级的，消息封装式的通信协议。 IMC定义了一系列的消息类型(Message)，每个消息都包含消息头和消息体。消息头包含源、目标、时间戳等元信息，消息体为实际的数据。 通过IMC，可以实现相互模块之间的收发。 &amp;lt; !&amp;mdash;more &amp;mdash;&amp;gt; IMC支持点对点通信和发布-订阅两种模式。 IMC基于UDP通信，提供了比较高效和实时的消息传递。 Neptus系统中的控制器、控制面板、计划执行器等模块都通过IMC进行交互。新模块可以通过实现IMC来加入系统。 IMC为Neptus系统提供了一个可扩展和灵活的内部通信机制,大大减少了模块间的耦合,也方便新增模块。 &amp;lt;!-- neptus地址 --&amp;gt; &amp;lt;arg name=&amp;#34;neptus_addr&amp;#34; default=&amp;#34;172.22.179.105&amp;#34;/&amp;gt; &amp;lt;!-- ros端地址 --&amp;gt; &amp;lt;arg name=&amp;#34;bridge_addr&amp;#34; default=&amp;#34;172.22.49.214&amp;#34;/&amp;gt; &amp;lt;arg name=&amp;#34;bridge_port&amp;#34; default=&amp;#34;6002&amp;#34;/&amp;gt; </description>
-    </item>
-    
-    <item>
       <title>👨‍🚀</title>
       <link>https://qinhua99.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
