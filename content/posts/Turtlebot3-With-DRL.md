@@ -204,8 +204,8 @@ summary: "搭建基于Turtlebot3的DRL仿真环境" # 文章简单描述，会�
 
       最终运行效果如下：
       {{< fancybox_figure align=center src="turtlebot3_ddpg_state1.gif" caption="ddpg_stage_1" >}} 
-      {{< fancybox_figure align=center src="turtlebot3_ddpg_state3.png" caption="ddpg_stage_3" >}} 
-      {{< fancybox_figure align=center src="turtlebot3_ddpg_state4.png" caption="ddpg_stage_4" >}}          
+      {{< fancybox_figure align=center src="turtlebot3_ddpg_state3.gif" caption="ddpg_stage_3" >}} 
+      {{< fancybox_figure align=center src="turtlebot3_ddpg_state4.gif" caption="ddpg_stage_4" >}}          
 
 以上都是训练的过程，训练结果与多方因素相关，需要深入研究代码和DDPG原理，后续根据需要进行修改。   
 
