@@ -2,12 +2,14 @@
 title : 'Hugo-Papermod站点'
 date : 2023-12-18T23:52:20+08:00
 draft : false
+author: ["ranqinghua"]
 categories:
 - Hugo
 math: true #启动公式
 ShowWordCounts : true #统计字数
 showToc: true # 显示目录
 TocOpen: true # 自动展开目录
+summary: "Hugo-PaperMod博客搭建过程记录" # 文章简单描述，会展示在主页
 ---
 # Hugo下载与安装<sup>[1](#rf1)</sup>
 - 到[Github](https://github.com/gohugoio/hugo/releases/tag/v0.121.1)下载[Hugo](https://gohugo.io/getting-started/quick-start/)的二进制文件，解压到合适位置。
